@@ -1,0 +1,151 @@
+/* ---------- x ---------- Cabeçalho ---------- x ----------*/
+.lista-de-botoes{
+    width: 12vw;
+    margin-right: 20px;
+}
+
+.radius{
+    border-radius: 4px;
+}
+/* ---------- x ---------- Principal ---------- x ----------*/
+/* ---------- x ---------- Primeira seção ---------- x ----------*/
+.primeira-secao-da-parte-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primeiro-titulo-da-pagina, .segundo-titulo-da-pagina{
+    color: var(--azul-mais-escuro);
+}
+
+.primeiro-titulo-da-pagina{
+    font-size: 3rem;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.segundo-titulo-da-pagina{
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 60px;
+}
+/* ---------- x ---------- Segunda seção ---------- x ----------*/
+.segunda-secao-da-parte-principal, .terceira-secao-da-parte-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 0 40px;
+}
+
+.formulario-de-dados-do-pesquisador, .formulario-de-dados-da-instituicao{
+    width: 90%;
+}
+
+.field-formulario-1, .field-formulario-2, .field-formulario-3{
+    padding: 30px 35px;
+    border-radius: 7px;
+    border: 2.5px solid var(--azul-mais-escuro);
+}
+fieldset:first-of-type{
+    margin-bottom: 40px;
+}
+
+legend{
+    font-size: 1.5rem;
+}
+
+.divisao-do-formulario-1, .divisao-do-formulario-2, .divisao-do-formulario-5, .divisao-do-formulario-6, .divisao-do-formulario-7, 
+.divisao-do-formulario-8{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.divisao-do-formulario-3{
+    display: flex;
+    justify-content: center;
+}
+
+.divisao-do-formulario-5{
+    padding-bottom: 10px;
+}
+
+.divisao-do-formulario-6, .divisao-do-formulario-7{
+    margin-bottom: 40px;
+}
+
+input{
+    outline: none;
+    font-family: Nunito;
+    color: var(--azul-mais-escuro);
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 2.5px solid var(--azul-mais-escuro);
+}
+
+input::placeholder{
+    color: var(--azul-claro);
+}
+
+.input-nome-do-pesquisador, .input-email-do-pesquisador, .input-senha-do-pesquisador, 
+.input-reintroduzir-senha-do-pesquisador, .input-senha-da-instituicao, .input-reintroduzir-senha-da-instituicao,
+.input-nome-do-administrador, .input-email-do-administrador, .input-senha-do-administrador, .input-reintroduzir-senha-do-administrador,
+.input-codigo-aleatorio-do-administrador, .botao-enviar-codigo{
+    width: 48.5%;
+}
+
+.input-nome-do-pesquisador, .input-email-do-pesquisador, .input-nome-da-instituicao{
+    margin-bottom: 35px;
+}
+
+.botao-ver-senhas{
+ background-color: transparent;  
+ color: var(--azul-menos-escuro); 
+ font-size: 1.3rem;
+ margin-top: 30px;
+}
+
+.botao-ver-senhas:hover{ 
+    color: var(--azul-mais-escuro); 
+    cursor: pointer;
+}
+
+.botao-do-cadastro{
+    background-color: var(--azul-mais-escuro);
+    color: white;
+    padding: 10px 40px;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.botao-do-cadastro:hover{
+    background-color: var(--azul-menos-escuro);
+    cursor: pointer;
+
+}
+
+.input-nome-da-instituicao{
+    width: 100%;
+}
+
+.centralizar-botao{
+    display: flex;
+    justify-content: center;
+}
+/* ---------- x ---------- Terceira seção ---------- x ----------*/
+
+.botao-enviar-codigo{
+    background-color: var(--azul-menos-escuro);
+    color: white;
+    font-size: 1.3rem;
+}
+
+.botao-enviar-codigo:hover{
+    background-color: var(--azul-mais-escuro);
+    cursor: pointer;
+}

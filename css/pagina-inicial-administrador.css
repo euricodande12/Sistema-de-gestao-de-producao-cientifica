@@ -1,0 +1,69 @@
+/* ---------- x ---------- Cabeçalho ---------- x ----------*/
+.section-logo-do-cabecalho{
+    max-width: 8vw;
+}
+
+.barra-de-navegacao{
+    width: 92vw;
+
+}
+
+.section-lista-de-links{
+    width: 100%;
+}
+
+.ativo{
+    color: var(--azul-mais-escuro) !important;
+    border-bottom: 3px solid var(--azul-mais-escuro);
+}
+
+.paragrafo{
+    color: #A8C6CC;
+}
+
+.item-pesquisador{
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: normal;
+    background-color: transparent;
+}
+
+.lista-de-links{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+.segunda-secao-da-parte-principal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.paragrafo{
+    font-size: 1.9rem;
+    color: var(--azul-menos-escuro);
+}
+
+.paragrafo-2{
+    margin-bottom: 50px;
+}
+
+.botao{
+    background-color: var(--azul-mais-escuro);
+    color: white;
+    width: 100%;
+    padding: 10px 40px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.botao:hover{
+    background-color: var(--azul-menos-escuro);
+    cursor: pointer;
+
+}
+
+img{
+    fill: blue;
+}

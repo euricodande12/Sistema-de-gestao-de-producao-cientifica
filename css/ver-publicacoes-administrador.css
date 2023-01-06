@@ -1,0 +1,44 @@
+
+/* ---------- x ---------- Primeira seção ---------- x ----------*/
+.primeira-secao{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.div-pesquisa{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-svg{
+    border: 3px solid var(--azul-mais-escuro);
+    border-radius: 5px 0 0 5px;
+    background-color: transparent;
+}
+
+.btn-svg:hover{
+    cursor: pointer;
+    background-color: var(--azul-claro);
+}
+
+input::placeholder{
+    color: var(--azul-claro);
+}
+
+.pesquisa{
+    width: 50%;;
+    padding: 9.5px 20px;
+    font-size: 1.4rem;
+    font-family: Nunito;
+    border: 3px solid var(--azul-mais-escuro);
+    border-left: none;
+    outline-color: var(--azul-mais-escuro);
+    border-radius: 0 5px 5px 0;
+}

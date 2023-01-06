@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@1000&display=swap" rel="stylesheet">
+    <title>Produção Científica - Cadastro</title>
+</head>
+<body>
+    <!-- x ---------- Início do cabeçalho ---------- x -->
+    <header class="cabecalho">
+        <!-- x ---------- Início da seção do logotipo do cabeçalho ---------- x -->
+        <section class="section-logo-do-cabecalho">
+            <!-- x ---------- Início do logotipo do cabeçalho ---------- x -->
+            <img src="logo/logo_transparent.png" class="logotipo-do-cabecalho" alt="Logotipo" width="70px"><!-- x ------- Logotipo ------- x -->
+            <!-- x ---------- Fim do logotipo do cabeçalho ---------- x -->
+        </section>
+        <!-- x ---------- Fim da seção do logotipo do cabeçalho ---------- x -->
+
+        <!-- x ---------- Início da barra de navegação do cabeçalho ---------- x -->
+        <nav class="barra-de-navegacao">
+            <!-- x ---------- Início da primeira seção da barra de navegação do cabeçalho - Seção de links ---------- x -->
+            <section class="section-lista-de-links">
+                <!-- x ---------- Início da lista de links da primeira seção da barra de navegação do cabeçalho ---------- x -->
+                <ul class="lista-de-links">
+                    <li class="item-da-lista-de-links"><a href="index.html" class="link-da-lista ">Página inicial</a></li><!-- Primeiro link da lista -->
+                    <li class="item-da-lista-de-links"><a href="ver-publicacoes-usuario-nao-logado.html" class="link-da-lista">Ver publicações</a></li><!-- Segundo link da lista -->
+                    <li class="item-da-lista-de-links"><a href="index.html#sobre-nos" class="link-da-lista">Sobre nós</a></li><!-- Terceiro link da lista -->
+                    <li class="item-da-lista-de-links"><a href="index.html#contacte-nos" class="link-da-lista">Contacte-nos</a></li><!-- Quarto link da lista -->
+                </ul>
+                <!-- x ---------- Fim da lista de links da primeira seção da barra de navegação do cabeçalho ---------- x -->
+            </section>
+            <!-- x ---------- Fim da primeira seção da barra de navegação do cabeçalho ---------- x -->
+
+            <!-- x ---------- Início da segunda seção da barra de navegação do cabeçalho - Seção de botões---------- x -->
+            <section class="lista-de-botoes">
+                <a href="./login.html" class="botao-da-secao-de-botoes-do-cabecalho radius btn-login-nav-primeiro">Fazer login</a><!-- Botão fazer login -->
+            </section>
+            <!-- x ---------- Fim da segunda seção da barra de navegação do cabeçalho - Seção de botões---------- x -->
+        </nav>
+        <!-- x ---------- Fim da barra de navegação do cabeçalho ---------- x -->
+    </header>
+    <!-- x ---------- Fim do cabeçalho ---------- x -->
+
+    <!-- x ---------- Início da parte principal do site ---------- x -->
+    <main class="principal">
+        <!-- x ---------- Início da primeira seção da parte principal do site ---------- x -->
+        <section class="primeira-secao-da-parte-principal">
+            <h1 class="primeiro-titulo-da-pagina">Faça o seu cadastro!</h1><!-- x --- Primeiro título da página --- x -->
+            <h2 class="segundo-titulo-da-pagina">Acompanhe de perto a evolução científica.</h2><!-- x --- Segundo título da página --- x -->
+        </section>
+        <!-- x ---------- Fim da primeira seção da parte principal do site ---------- x -->
+
+        <!-- x ---------- Início da segunda seção da parte principal do site ---------- x -->
+        <section class="segunda-secao-da-parte-principal">
+            <!-- x ---------- Início do primeiro formulário da segunda seção da parte principal do site ---------- x -->
+            <form action="" class="formulario-de-dados-do-pesquisador">
+                <!-- x ---------- Início do parágrafo do primeiro artigo da segunda seção da parte principal do site ---------- x -->
+                <fieldset class="field-formulario-1">
+                    <legend>Pesquisador</legend>
+                    <div class="divisao-do-formulario-1"><!-- x --- Início da primeira divisão --- x -->
+                        <input type="text" class="input-nome-do-pesquisador" placeholder="Nome completo"><!-- x --- Input do nome completo --- x -->
+                        <input type="email" class="input-email-do-pesquisador" placeholder="E-mail"><!-- x --- Input do email --- x -->
+                    </div><!-- x --- Fim da primeira divisão --- x -->
+                    <div class="divisao-do-formulario-2"><!-- x --- Início da segunda divisão --- x -->
+                        <input type="password" class="input-senha-do-pesquisador" placeholder="Senha"><!-- x --- Input da senha --- x -->
+                        <input type="password" class="input-reintroduzir-senha-do-pesquisador" placeholder="Senha novamente"><!-- x --- Input da senha --- x -->
+                    </div><!-- x --- Fim da segunda divisão --- x -->
+                    <div class="divisao-do-formulario-3"><!-- x --- Início da terceira divisão --- x -->
+                        <button class="botao-ver-senhas">Ver as senhas</button><!-- x --- Botão para ver as senhas --- x -->
+                    </div><!-- x --- Fim da terceira divisão --- x -->
+                </fieldset>
+            </form>
+            <!-- x ---------- Fim do primeiro formulário da segunda seção da parte principal do site ---------- x -->
+
+           <!-- x ---------- Início do segundo formulário da segunda seção da parte principal do site ---------- x -->
+           <form action="" class="formulario-de-dados-da-instituicao">
+            <!-- x ---------- Início do parágrafo do primeiro artigo da segunda seção da parte principal do site ---------- x -->
+            <fieldset class="field-formulario-2">
+                <legend>Instituição</legend>
+                <div class="divisao-do-formulario-4"><!-- x --- Início da primeira divisão --- x -->
+                    <input type="text" class="input-nome-da-instituicao" placeholder="Nome"><!-- x --- Input do nome da instituição --- x -->
+                </div><!-- x --- Fim da primeira divisão --- x -->
+                <div class="divisao-do-formulario-5"><!-- x --- Início da segunda divisão --- x -->
+                    <input type="text" class="input-senha-da-instituicao" placeholder="Sigla"><!-- x --- Input da senha --- x -->
+                    <input type="text" class="input-reintroduzir-senha-da-instituicao" placeholder="País"><!-- x --- Input da senha --- x -->
+                </div><!-- x --- Fim da segunda divisão --- x -->
+            </fieldset>
+            <div class="centralizar-botao"><!-- x ---------- Início da div para centralizar o botão ---------- x -->
+                <button class="botao-do-cadastro">Cadastrar</button><!-- x --------- Botão de cadastro--------- x -->
+            </div><!-- x ---------- Fim da div para centralizar o botão ---------- x -->
+        </form>
+        <!-- x ---------- Fim do segundo formulário da segunda seção da parte principal do site ---------- x -->
+        </section>
+        <!-- x ---------- Fim da segunda seção da parte principal do site ---------- x -->
+
+        <!-- x ---------- Início da terceira seção da parte principal do site ---------- x -->
+        <section class="terceira-secao-da-parte-principal">
+            <!-- x ---------- Início do primeiro formulário da segunda seção da parte principal do site ---------- x -->
+            <form action="" class="formulario-de-dados-do-pesquisador">
+                <fieldset class="field-formulario-3">
+                    <legend>Administrador</legend>
+                    <div class="divisao-do-formulario-6"><!-- x --- Início da primeira divisão --- x -->
+                        <input type="text" class="input-nome-do-administrador" placeholder="Nome completo"><!-- x --- Input do nome completo --- x -->
+                        <input type="email" class="input-email-do-administrador" placeholder="E-mail"><!-- x --- Input do email --- x -->
+                    </div><!-- x --- Fim da primeira divisão --- x -->
+                    <div class="divisao-do-formulario-7"><!-- x --- Início da segunda divisão --- x -->
+                        <input type="password" class="input-senha-do-administrador" placeholder="Senha"><!-- x --- Input da senha --- x -->
+                        <input type="password" class="input-reintroduzir-senha-do-administrador" placeholder="Senha novamente"><!-- x --- Input da senha --- x -->
+                    </div><!-- x --- Fim da segunda divisão --- x -->
+                    <div class="divisao-do-formulario-8"><!-- x --- Início da segunda divisão --- x -->
+                        <input type="texto" class="input-codigo-aleatorio-do-administrador" placeholder="Código aleatório"><!-- x --- Input do código --- x -->
+                        <button class="botao-enviar-codigo">Enviar código</button><!-- x --- button da enviar código --- x -->
+                    </div><!-- x --- Fim da segunda divisão --- x -->
+                    <div class="divisao-do-formulario-9"><!-- x --- Início da terceira divisão --- x -->
+                        <button class="botao-ver-senhas">Ver as senhas</button><!-- x --- Botão para ver as senhas --- x -->
+                    </div><!-- x --- Fim da terceira divisão --- x -->
+                </fieldset>
+                <div class="centralizar-botao"><!-- x ---------- Início da div para centralizar o botão ---------- x -->
+                    <button class="botao-do-cadastro">Cadastrar</button><!-- x --------- Botão de cadastro--------- x -->
+                </div><!-- x ---------- Fim da div para centralizar o botão ---------- x -->
+            </form>
+            <!-- x ---------- Fim do primeiro formulário da terceira seção da parte principal do site ---------- x -->
+
+        </section>
+        <!-- x ---------- Fim da terceira seção da parte principal do site ---------- x -->
+    </main>
+    <!-- x ---------- Fim da parte principal do site ---------- x -->
+
+    <!-- x ---------- Início do rodapé do site ---------- x -->
+    <footer class="rodape">
+        <!-- x ---------- Início da primeira seção do rodapé do site ---------- x -->
+        <section class="primeira-seccao-do-rodape">
+            <a href="politicas-de-privacidade.html" class="link-do-rodape primeiro-link-do-rodape">Políticas de privacidade</a> <!-- x ---------- Primeiro link do rodapé ---------- x -->
+            <a href="termos-de-servico.html" class="link-do-rodape">Termos de serviço</a> <!-- x ---------- Segundo link do rodapé ---------- x -->
+        </section>
+        <!-- x ---------- Fim da primeira seção do rodapé do site ---------- x -->
+
+        <!-- x ---------- Início da segunda seção do rodapé do site ---------- x -->
+        <section class="segunda-seccao-do-rodape">
+            <p class="ultimo-paragrafo-da-pagina">Eurico Dande &copy; 2023, todos os direitos reservados.</p><!-- x -- Último parágrafo -- x -->
+        </section>
+        <!-- x ---------- Fim da segunda seção do rodapé do site ---------- x -->
+    </footer>
+    <!-- x ---------- Fim do rodapé do site ---------- x -->
+
+</body>
+</html>

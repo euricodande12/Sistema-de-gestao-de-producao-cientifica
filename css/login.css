@@ -1,0 +1,110 @@
+/* ---------- x ---------- Cabeçalho ---------- x ----------*/
+.lista-de-botoes{
+    width: 12vw;
+    margin-right: 20px;
+}
+.botao-da-secao-de-botoes-do-cabecalho{
+    border-radius: 6px;
+}
+/* ---------- x ---------- Principal ---------- x ----------*/
+/* ---------- x ---------- Primeira seção ---------- x ----------*/
+.primeira-secao-da-parte-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primeiro-titulo-da-pagina, .segundo-titulo-da-pagina{
+    color: var(--azul-mais-escuro);
+}
+
+.primeiro-titulo-da-pagina{
+    font-size: 3rem;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.segundo-titulo-da-pagina{
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    text-align: center;
+}
+/* ---------- x ---------- Segunda seção ---------- x ----------*/
+.segunda-secao-da-parte-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 0 40px;
+}
+
+.formulario{
+    width: 80%;
+}
+
+.field-formulario{
+    padding: 8vh 4vw;
+    border-radius: 7px;
+    border: 2.5px solid var(--azul-mais-escuro);
+}
+
+.divisao-do-formulario-6, .divisao-do-formulario-7{
+    margin-bottom: 40px;
+}
+
+input, select{
+    outline: none;
+    font-family: Nunito;
+    color: var(--azul-mais-escuro);
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 2.5px solid var(--azul-mais-escuro);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+input::placeholder{
+    color: var(--azul-claro);
+}
+
+.input-email, .input-senha, select{
+    width: 100%;
+}
+
+.input-nome-do-pesquisador, .input-email-do-pesquisador, .input-nome-da-instituicao{
+    margin-bottom: 35px;
+}
+
+.divisao-do-formulario{
+    display: flex;
+    justify-content: space-around;
+}
+
+.botao-senha{
+ background-color: transparent;  
+ color: var(--azul-menos-escuro); 
+ font-size: 1.3rem;
+}
+
+.botao-senha:hover{ 
+    color: var(--azul-mais-escuro); 
+    cursor: pointer;
+}
+
+.botao-do-cadastro{
+    background-color: var(--azul-mais-escuro);
+    color: white;
+    width: 100%;
+    padding: 10px 40px;
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+
+.botao-do-cadastro:hover{
+    background-color: var(--azul-menos-escuro);
+    cursor: pointer;
+
+}

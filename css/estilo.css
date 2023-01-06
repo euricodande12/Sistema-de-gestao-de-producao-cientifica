@@ -1,0 +1,248 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+@font-face {
+    font-family: Nunito;
+    src: url('../Nunito/Nunito-VariableFont_wght.ttf');
+}
+:root{
+    --azul-mais-escuro: #304860;
+    --azul-menos-escuro:#60798E;
+    --azul-claro: #A8C6CC;
+}
+
+body{
+    width: 100vw;
+    font-family: Nunito;
+    font-stretch:normal;
+    font-variant: normal;
+    overflow-x: hidden;
+}
+
+/* ---------- x ---------- Cabeçalho ---------- x ----------*/
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    width: 100vw;
+}
+
+.section-logo-do-cabecalho{
+    max-width: 8vw;
+    padding: 0 20px;
+}
+
+.barra-de-navegacao{
+    width: 92vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-lista-de-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    width: 68vw;
+}
+
+.lista-de-links{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+li{
+    list-style: none;
+}
+
+.item-da-lista-de-links{
+    font-size: 1.7rem; 
+}
+
+.item-da-lista-de-links > a{
+    color: var(--azul-menos-escuro);
+}
+
+.link-da-lista:hover{
+    transition: 0.2s color;
+    color: var(--azul-claro);
+}
+
+.ativo{
+    color: initial;
+    color: var(--azul-mais-escuro) !important;
+    border-bottom: 3px solid var(--azul-mais-escuro);
+}
+
+a{
+    text-decoration: none;
+}
+
+.lista-de-botoes{
+    width: 24vw;
+    display: flex;
+    align-items: center; 
+}
+
+button{
+    border-radius: 5px;
+    border: 0;
+    font-weight: 600;
+    font-family: Nunito;
+}
+
+.botao-da-secao-de-botoes-do-cabecalho{
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+
+.btn-login-nav-primeiro{
+    border: 2px solid var(--azul-mais-escuro) !important;
+    color: var(--azul-mais-escuro);
+    background-color: white;
+    margin-right: 10px;
+}
+
+.btn-login-nav-segundo{
+    color: white;
+    background-color: var(--azul-mais-escuro);
+    border: 2px solid;
+}
+
+.btn-login-nav-primeiro:hover{
+    cursor: pointer;
+    color: white;
+    background-color: var(--azul-mais-escuro);
+    transition: 0.2s;
+}
+
+.btn-login-nav-segundo:hover{
+    cursor: pointer;
+    color: var(--azul-mais-escuro);
+    background-color: white;
+    border: 2px solid var(--azul-mais-escuro);
+}
+
+.primeira-secao-da-parte-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primeiro-titulo-da-pagina, .segundo-titulo-da-pagina{
+    color: var(--azul-mais-escuro);
+}
+
+.primeiro-titulo-da-pagina{
+    font-size: 3rem;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.segundo-titulo-da-pagina{
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.botao-link{
+    width: 110px;
+    padding: 10px 5px;
+    font-size: 1.rem;
+    border: 2px solid transparent;
+    border-radius: 7px;
+    text-align: center;
+    border-radius: 5px;
+    border: 0;
+    font-weight: 600;
+}
+
+/* ----- x ----- Rodapé ----- x ----- */
+.rodape{
+    background-color: var(--azul-menos-escuro);
+    margin-top: 60px;
+    padding: 20px 0;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+    min-height: 120px;
+}
+
+.primeira-seccao-do-rodape{
+    display: flex;
+    flex-direction: column;
+}
+
+.link-do-rodape{
+    color: white;
+    transition: 0.2s color;
+    display: inline-block;
+}
+
+.link-do-rodape:hover{
+    color: var(--azul-mais-escuro);
+}
+
+.primeiro-link-do-rodape{
+    margin-bottom: 30px;
+}
+
+
+@media screen and (max-width:1156px){
+    /* ---------- x ---------- Cabeçalho ---------- x ----------*/
+    .cabecalho{
+        padding: 10px 5px;
+    }
+
+    .section-logo-do-cabecalho{
+        padding: 0 10px;
+    }
+
+    .lista-de-links{
+        width: 96%;
+    }
+
+    .item-da-lista-de-links{
+        font-size: 1.4rem; 
+    }
+
+    .botao-da-secao-de-botoes-do-cabecalho{
+        padding: 3px 7px;
+    }
+
+    /* ----- x ----- Segunda Seção ----- x -----*/
+    .segunda-secao-da-parte-principal, .terceira-secao-da-parte-principal{
+        flex-wrap: wrap;
+    }
+
+    .paragrafo-do-primeiro-artigo-da-segunda-secao-da-parte-principal, .paragrafo-do-segundo-artigo-da-terceira-secao-da-parte-principal,
+    .unico-paragrafo-da-quarta-seccao{
+        font-size: 2.3rem;
+    }
+
+    .imagem-da-segunda-secao-da-parte-principal, .imagem-da-terceira-secao-da-parte-principal{
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width:852px){
+    .lista-de-botoes{
+        flex-direction: column;
+    }
+
+    .botao-da-secao-de-botoes-do-cabecalho{
+        padding: 3px 7px;
+        width: 150px;
+        margin: 0;
+    }
+
+    .btn-login-nav-primeiro{
+        margin-top: 10px;
+        order: 1;
+    }
+}

@@ -1,0 +1,143 @@
+/* ----- x ----- Main ----- x ----- */
+.primeiro-titulo-da-pagina{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--azul-mais-escuro);
+    margin: 75px 0;
+}
+
+/* ----- x ----- Segunda Seção ----- x -----*/
+.segunda-secao-da-parte-principal, .terceira-secao-da-parte-principal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.paragrafo-do-primeiro-artigo-da-segunda-secao-da-parte-principal, .paragrafo-do-segundo-artigo-da-terceira-secao-da-parte-principal,
+.unico-paragrafo-da-quarta-seccao{
+    font-size: 2.5rem;
+    color: var(--azul-menos-escuro);
+}
+
+.paragrafo-do-primeiro-artigo-da-segunda-secao-da-parte-principal{
+    margin-bottom: 50px;
+}
+
+.imagem-da-segunda-secao-da-parte-principal, .imagem-da-terceira-secao-da-parte-principal{
+    width: 600px;
+}
+
+.botao-do-primeiro-artigo-da-segunda-secao-da-parte-principal{
+    padding: 10px 25px;
+    font-size: 1.5rem;
+    background-color: var(--azul-mais-escuro);
+    color: white;
+    border-radius: 5px;
+}
+
+.botao-do-primeiro-artigo-da-segunda-secao-da-parte-principal:hover{
+    cursor: pointer;
+    border: 2px solid var(--azul-mais-escuro);
+    color: var(--azul-mais-escuro);
+    background-color: white;
+}
+
+/* ----- x ----- Terceira Seção ----- x ----- */
+
+.terceira-secao-da-parte-principal{
+    margin-top: 180px;
+    margin-bottom: 160px;
+}
+
+.ultimo-botao-da-terceira-seccao{
+    padding: 10px 25px;
+    font-size: 1.5rem;
+    background-color: white;
+    color: var(--azul-mais-escuro);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 2px solid var(--azul-mais-escuro);
+    border-radius: 5px;
+}
+
+.ultimo-botao-da-terceira-seccao:hover{
+    cursor: pointer;
+    background-color: var(--azul-mais-escuro);
+    color: white;
+}
+/* ----- x ----- Quarta Seção ----- x ----- */
+
+.unico-artigo-da-quarta-seccao-da-parte-principal-do-site{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* ----- x ----- Seção  Sobre nós ----- x ----- */
+.secao-sobre-nos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--azul-menos-escuro);
+    padding-top: 30px;
+    padding-bottom: 32px;
+}
+
+.titulo-da-secao-sobre-nos{
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: bolder;
+    color: var(--azul-mais-escuro);
+    margin: 75px 0;
+}
+
+.primeiro-paragrafo-da-secao-sobre-nos, .segundo-paragrafo-da-secao-sobre-nos{
+    font-size: 2.2rem;
+    color: white;
+    max-width: 70vw;
+    text-align: justify;
+    margin-bottom: 100px;
+}
+
+/* ----- x ----- Seção  Contacte-nos ----- x ----- */
+.titulo-da-secao-contacte-nos{
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: bolder;
+    color: var(--azul-mais-escuro);
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.secao-contacte-nos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 29px;
+}
+
+.item-da-lista-para-contactos{
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--azul-menos-escuro);
+}
+
+.artigo-de-icones-de-redes-sociais-da-secao-contacte-nos{
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.link-de-rede-social-1{
+    margin-right: 30px;
+}
+
+.link-de-rede-social-3{
+    margin-left: 30px;
+}
+

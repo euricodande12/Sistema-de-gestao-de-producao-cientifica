@@ -1,0 +1,241 @@
+body{
+    overflow-y: hidden;
+}
+
+/* ---------- x ---------- Cabeçalho ---------- x ----------*/
+.cabecalho{
+    padding: 2px 5px;
+}
+
+.secao-passo-1, .secao-passo-2-1, .secao-passo-2-2, .secao-passo-3, .secao-passo-5{
+    height: 100vh;
+}
+
+.lista-de-botoes{
+    width: 12vw;
+    margin-right: 20px;
+}
+
+/* ---------- x ---------- Barras ---------- x ----------*/
+.div-barras{
+    display: flex;
+    width: 100vw;
+    padding: 0 25%;
+    justify-content: space-between;
+}
+
+.barra{
+    width: 80px;
+    height: 5px;
+    background-color: var(--azul-claro);
+    border: 0;
+    border-radius: 2px;
+}
+
+.presente{
+    background-color:var(--azul-mais-escuro);
+}
+/* ---------- x ---------- Principal ---------- x ----------*/
+/* ---------- x ---------- Primeira seção ---------- x ----------*/
+.primeira-secao-da-parte-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primeiro-titulo-da-pagina, .segundo-titulo-da-pagina{
+    color: var(--azul-mais-escuro);
+}
+
+.primeiro-titulo-da-pagina{
+    font-size: 2.3rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.segundo-titulo-da-pagina{
+    font-size: 1.7rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+/* ---------- x ---------- Segunda seção ---------- x ----------*/
+.segunda-secao-da-parte-principal{
+    width: 100vw;
+    padding: 0 25%;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.divisao-do-formulario{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+input, select{
+    outline: none;
+    font-family: Nunito;
+    color: var(--azul-mais-escuro);
+    padding: 15px;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    border: 2.5px solid var(--azul-mais-escuro);
+    text-align: center;
+}
+
+.input-nome-do-pesquisador{
+    margin-bottom: 50px;
+    margin-top: 15px;
+}
+
+.input-titulo-da-publicacao{
+    margin-bottom: 50px;
+}
+
+.input-nome-do-pesquisador, .input-titulo-da-publicacao, .select-tipo, .input-nome-do-congresso{
+    width: 100%;
+}
+
+input{
+    margin-bottom: 30px;
+}
+
+input::placeholder{
+    color: var(--azul-claro);
+}
+
+.botao-1{
+    width: 48%;
+    padding: 10px 40px;
+    font-size: 1.5rem;
+    margin-top: 60px;
+    border: 2px solid transparent;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.botao-2{
+    width: 48%;
+    padding: 10px 40px;
+    font-size: 1.5rem;
+
+    border: 2px solid transparent;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.botao:hover{
+    cursor: pointer;
+}
+
+select:hover{
+    cursor: pointer;
+}
+
+.botao-retroceder{
+    background-color: transparent;  
+    color: var(--azul-mais-escuro); 
+    border-color: var(--azul-mais-escuro);
+}
+
+.botao-retroceder:hover{
+    color: var(--azul-menos-escuro); 
+    font-weight: bold;
+}
+
+.botao-avancar{
+    background-color: var(--azul-mais-escuro);  
+    color: white; 
+    border-color: var(--azul-mais-escuro);
+}
+
+.botao-avancar:hover{
+    background-color: white;  
+    color: var(--azul-mais-escuro); 
+    font-weight: bold;
+}
+
+/* ---------- x ---------- -------------- ---------- x ----------*/
+/* ---------- x ---------- Segunda Parte ---------- x ----------*/
+/* ---------- x ---------- ------------ ---------- x ----------*/
+.principal-mt{
+    padding-bottom: 43px;
+}
+
+.principal-2{
+    padding-bottom: 20px;
+}
+
+.input-sigla, .input-ano, .input-numero-inicial, .input-numero-final{
+    width: 48%;
+}
+
+.input-bairro{
+    width: 39%;
+}
+.input-rua{
+    width: 30%;
+}
+.input-edificio{
+    width: 23%;
+}
+
+.div-1, .div-2, .div-3{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* ---------- x ---------- -------------- ---------- x ----------*/
+/* --------- x -------- Segunda Parte Plus -------- x ----------*/
+/* ---------- x ---------- ------------ ---------- x ----------*/
+.input-periodico, .input-editora{
+    width: 100%;
+}
+.input-edicao, .input-volume, .input-pagina-inicial, .input-pagina-final{
+    width: 48%;
+}
+
+/* ---------- x ---------- -------------- ---------- x ----------*/
+/* ---------- x --------- Terceira Parte ---------- x ----------*/
+/* ---------- x ---------- ------------ ---------- x ----------*/
+.div-do-text-a-ser-publicado{
+    display: flex;
+    padding: 0 5vw;
+}
+textarea{
+    outline: none;
+    font-family: Nunito;
+    color: var(--azul-mais-escuro);
+    padding: 15px;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    border: 2.5px solid var(--azul-mais-escuro);
+    width: 100%;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+/* ---------- x ---------- -------------- ---------- x ----------*/
+/* ---------- x --------- Quarta Parte ---------- x ----------*/
+/* ---------- x ---------- ------------ ---------- x ----------*/
+.secao-passo-4{
+    height: 100vh !important;
+}
+.select-quantas{
+    margin-bottom: 30px;
+}
+.input-nome-da-publicacao, .select-quantas{
+    width: 100%;
+}
+.publicacao-1, .publicacao-2{
+    margin-bottom: 30px !important;
+}
+

@@ -1,0 +1,186 @@
+:root{
+    --verde: rgb(32, 202, 32);
+    --vermelha: rgb(211, 39, 39);
+}
+
+/* ---------- x ---------- Cabeçalho ---------- x ----------*/
+.section-logo-do-cabecalho{
+    max-width: 8vw;
+}
+
+.barra-de-navegacao{
+    width: 92vw;
+
+}
+
+.section-lista-de-links{
+    width: 100%;
+}
+
+.ativo{
+    color: var(--azul-mais-escuro) !important;
+    border-bottom: 3px solid var(--azul-mais-escuro);
+}
+
+.paragrafo{
+    color: #A8C6CC;
+}
+
+.item-pesquisador{
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: normal;
+    background-color: transparent;
+}
+
+.lista-de-links{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+/* ---------- x ---------- Primeira seção ---------- x ----------*/
+.primeira-secao{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 20px 60px;
+    margin-top: 30px;
+}
+
+.div-pesquisa{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-svg{
+    border: 3px solid var(--azul-mais-escuro);
+    border-radius: 5px 0 0 5px;
+    background-color: transparent;
+}
+
+.btn-svg:hover{
+    cursor: pointer;
+    background-color: var(--azul-claro);
+}
+
+input::placeholder{
+    color: var(--azul-claro);
+}
+
+.pesquisa{
+    width: 50%;;
+    padding: 9.5px 20px;
+    font-size: 1.4rem;
+    font-family: Nunito;
+    border: 3px solid var(--azul-mais-escuro);
+    border-left: none;
+    outline-color: var(--azul-mais-escuro);
+    border-radius: 0 5px 5px 0;
+}
+
+.div-botao{
+    width: 20vw;
+}
+
+.botao{
+    background-color: var(--azul-mais-escuro);
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.5rem;
+}
+
+.botao:hover{
+    background-color: var(--azul-menos-escuro);
+    cursor: pointer;
+
+}
+
+/* --------- x --------- Segunda seção --------- x ---------*/
+.segunda-secao{ /*Para todas as seções que possuem artigos de publicações*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 60px;
+    width: 100vw;
+}
+
+.artigo{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--azul-mais-escuro);
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.paragrafo{
+    font-size: 1.3rem;
+    color: var(--azul-menos-escuro);
+    margin: 20px 30px 0 30px;
+}
+
+.a-botao{
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--azul-mais-escuro);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+.a-botao:hover{
+    cursor: pointer;
+    background-color: white;
+    color: var(--azul-mais-escuro);
+}
+
+.div-botoes-2{
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.a-botao, .a-btn-2, .btn-2{
+    width: 33.33%;
+}
+
+.a-btn-2, .btn-2{
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.a-btn-2{
+    color: white;
+    background-color: var(--verde);
+    border-radius: 0;
+}
+
+.btn-2{
+    color: white;
+    background-color: var(--vermelha);
+    border-radius: 0 5px 5px 0;
+}
+
+.a-btn-2:hover{
+    color: var(--verde);
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn-2:hover{
+    color: var(--vermelha);
+    background-color: white;
+    cursor: pointer;
+}

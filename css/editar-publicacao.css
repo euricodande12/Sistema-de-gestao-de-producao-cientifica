@@ -1,0 +1,150 @@
+body{
+    overflow-y: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ---------- x ---------- Cabeçalho ---------- x ----------*/
+.cabecalho{
+    padding: 2px 5px;
+}
+
+/* ---------- x ---------- Principal ---------- x ----------*/
+/* ---------- x ---------- Seção de edição ---------- x ----------*/
+.primeiro-titulo-da-pagina{
+    margin: 0;
+    padding: 0;
+}
+.primeiro-titulo-da-pagina{
+    font-size: 2.3rem;
+}
+
+.div-do-formulario{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 20px 40px 20px 40px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.div-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+
+input, select{
+    outline: none;
+    font-family: Nunito;
+    color: var(--azul-mais-escuro);
+    padding: 15px;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    border: 2.5px solid var(--azul-mais-escuro);
+    text-align: center;
+}
+
+.input-nome{
+    margin-bottom: 30px;
+    margin-top: 15px;
+    width: 69%;
+}
+
+.select-tipo{
+    width: 29%;
+}
+
+input{
+    margin-bottom: 30px;
+}
+
+input::placeholder{
+    color: var(--azul-claro);
+}
+
+.botao-1{
+    width: 48%;
+    padding: 10px 40px;
+    font-size: 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.botao-2{
+    width: 48%;
+    padding: 10px 5px;
+    font-size: 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.botao:hover{
+    cursor: pointer;
+}
+
+select:hover{
+    cursor: pointer;
+}
+
+.botao-retroceder{
+    background-color: transparent;  
+    color: var(--azul-mais-escuro); 
+    border-color: var(--azul-mais-escuro);
+}
+
+.botao-retroceder:hover{
+    cursor: pointer;
+    color: var(--azul-menos-escuro); 
+    font-weight: bold;
+}
+
+.botao-avancar{
+    cursor: pointer;
+    background-color: var(--azul-mais-escuro);  
+    color: white; 
+    border-color: var(--azul-mais-escuro);
+}
+
+.botao-avancar:hover{
+    background-color: white;  
+    color: var(--azul-mais-escuro); 
+    font-weight: bold;
+}
+
+/* ---------- x ---------- -------------- ---------- x ----------*/
+/* ---------- x --------- Terceira Parte ---------- x ----------*/
+/* ---------- x ---------- ------------ ---------- x ----------*/
+.div-do-text-a-ser-publicado{
+    display: flex;
+    padding: 0 5vw;
+}
+textarea{
+    outline: none;
+    font-family: Nunito;
+    color: var(--azul-mais-escuro);
+    padding: 15px;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    border: 2.5px solid var(--azul-mais-escuro);
+    width: 100%;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+textarea::placeholder{
+    color: var(--azul-claro);
+}
+
+.segunda-secao-da-parte-principal{
+    width: 100vw;
+    padding: 0 25%;
+}

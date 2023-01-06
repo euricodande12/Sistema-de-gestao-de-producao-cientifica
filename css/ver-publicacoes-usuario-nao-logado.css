@@ -1,0 +1,124 @@
+
+/* ---------- x ---------- Primeira seção ---------- x ----------*/
+.primeira-secao{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.div-pesquisa{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-svg{
+    border: 3px solid var(--azul-mais-escuro);
+    border-radius: 5px 0 0 5px;
+    background-color: transparent;
+}
+
+.btn-svg:hover{
+    cursor: pointer;
+    background-color: var(--azul-claro);
+}
+
+input::placeholder{
+    color: var(--azul-claro);
+}
+
+.pesquisa{
+    width: 50%;;
+    padding: 9.5px 20px;
+    font-size: 1.4rem;
+    font-family: Nunito;
+    border: 3px solid var(--azul-mais-escuro);
+    border-left: none;
+    outline-color: var(--azul-mais-escuro);
+    border-radius: 0 5px 5px 0;
+}
+
+/* --------- x --------- Segunda seção --------- x ---------*/
+.segunda-secao{ /*Para todas as seções que possuem artigos de publicações*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 60px;
+    width: 100vw;
+}
+
+.artigo{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--azul-mais-escuro);
+    border-radius: 5px;
+    width: 330px;
+}
+
+.paragrafo{
+    font-size: 1.3rem;
+    color: var(--azul-menos-escuro);
+    margin: 10px 20px 0 20px;
+}
+
+.a-botao{
+    min-width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--azul-mais-escuro);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+.a-botao:hover{
+    cursor: pointer;
+    background-color: white;
+    color: var(--azul-mais-escuro);
+}
+
+.div-botoes-2{
+    display: flex;
+    width: 100%;
+}
+
+.a-btn-2, .btn-2{
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.a-btn-2{
+    color: white;
+    background-color: var(--verde);
+    border-radius: 5px 0 0 5px;
+}
+
+.btn-2{
+    color: white;
+    background-color: var(--vermelha);
+    border-radius: 0 5px 5px 0;
+}
+
+.a-btn-2:hover{
+    color: var(--verde);
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn-2:hover{
+    color: var(--vermelha);
+    background-color: white;
+    cursor: pointer;
+}
+/* --------- x --------- Terceira seção --------- x ---------*/
