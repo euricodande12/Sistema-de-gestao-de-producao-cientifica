@@ -91,12 +91,12 @@ input, select{
 }
 
 .input-nome-do-pesquisador{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     margin-top: 15px;
 }
 
 .input-titulo-da-publicacao{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .input-nome-do-pesquisador, .input-titulo-da-publicacao, .select-tipo, .input-nome-do-congresso{
@@ -115,7 +115,7 @@ input::placeholder{
     width: 48%;
     padding: 10px 40px;
     font-size: 1.5rem;
-    margin-top: 60px;
+    margin-top: 40px;
     border: 2px solid transparent;
     border-radius: 7px;
     text-align: center;
