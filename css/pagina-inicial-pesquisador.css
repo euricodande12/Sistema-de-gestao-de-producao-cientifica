@@ -68,3 +68,65 @@
 img{
     fill: blue;
 }
+
+
+
+@media screen and (max-width: 1288px){
+    .section-logo-do-cabecalho{
+        max-width: 6w;
+        padding: 0 10px;
+    }
+    
+    .barra-de-navegacao{
+        width: 94vw;
+        justify-content: space-between;
+    }
+
+    .section-lista-de-links{
+        width: 94vw;
+        padding-left: 40px;
+    }
+    
+    .lista-de-links{
+        width: 90%;
+    }
+
+    .none{
+        display: none;
+    }
+
+    .primeiro-titulo-da-pagina, .titulo-da-secao-sobre-nos,
+    .titulo-da-secao-contacte-nos{
+        font-size: 1.7rem;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .paragrafo{
+        font-size: 1.5rem;
+        margin-top: 40px;
+    }
+
+    .primeiro-paragrafo-da-secao-sobre-nos,
+    .segundo-paragrafo-da-secao-sobre-nos{
+        margin-bottom: 40px;
+    }
+
+    /* ----- x ----- Segunda Seção ----- x -----*/
+    .segunda-secao-da-parte-principal{
+        flex-direction: column-reverse;
+    }
+
+    .terceira-secao-da-parte-principal{
+        flex-direction: column;
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+
+    .rodape{
+        background-color: var(--azul-menos-escuro);
+        margin-top: 60px;
+        padding: 20px 0;
+        font-size: 1rem;
+    }
+}

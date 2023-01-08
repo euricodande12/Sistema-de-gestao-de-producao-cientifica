@@ -78,6 +78,10 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    cursor: pointer;
+}
+
 .lista-de-botoes{
     width: 24vw;
     display: flex;
@@ -207,7 +211,7 @@ button{
     }
 
     .item-da-lista-de-links{
-        font-size: 1.4rem; 
+        font-size: 1rem; 
     }
 
     .botao-da-secao-de-botoes-do-cabecalho{
@@ -231,18 +235,44 @@ button{
 }
 
 @media screen and (max-width:852px){
+    .section-logo-do-cabecalho{
+        max-width: 6w;
+        padding: 0 10px;
+    }
+    
+    .barra-de-navegacao{
+        width: 94vw;
+    }
+
+    .section-lista-de-links{
+        width: 64vw;
+    }
+    
+    .lista-de-links{
+        width: 90%;
+    }
+
     .lista-de-botoes{
+        width: 30vw;
         flex-direction: column;
+        margin-right: 20px;
     }
 
     .botao-da-secao-de-botoes-do-cabecalho{
-        padding: 3px 7px;
-        width: 150px;
+        padding: 3px 2px;
+        width: 120px;
         margin: 0;
     }
 
     .btn-login-nav-primeiro{
         margin-top: 10px;
         order: 1;
+    }
+
+    .rodape{
+        background-color: var(--azul-menos-escuro);
+        margin-top: 60px;
+        padding: 20px 0;
+        font-size: 1rem;
     }
 }

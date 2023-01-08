@@ -108,3 +108,74 @@ input::placeholder{
     cursor: pointer;
 
 }
+
+@media screen and (max-width:852px){
+    .row{
+        flex-direction: row;
+    }
+    .section-logo-do-cabecalho{
+        max-width: 6w;
+        padding: 0 10px;
+    }
+    
+    .barra-de-navegacao{
+        width: 94vw;
+        justify-content: space-between;
+    }
+
+    .section-lista-de-links{
+        width: 64vw;
+        padding-left: 40px;
+    }
+    
+    .lista-de-links{
+        width: 90%;
+    }
+
+    .lista-de-botoes{
+        width: 30vw;
+    }
+
+    .botao-da-secao-de-botoes-do-cabecalho{
+        padding: 3px 2px;
+        width: 80px;
+        margin: 0;
+    }
+
+    .btn-login-nav-primeiro{
+        margin-top: 10px;
+        order: 1;
+    }
+
+    .none{
+        display: none;
+    }
+
+    .primeiro-titulo-da-pagina{
+        font-size: 2.2rem;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .segundo-titulo-da-pagina{
+        font-size: 1.3rem;
+        margin-bottom: 40px;
+    }
+
+    .formulario{
+        width: 99%;
+    }
+    
+    .field-formulario{
+        padding: 8vh 4vw;
+        border-radius: 7px;
+        border: 2.5px solid var(--azul-mais-escuro);
+    }
+
+    .rodape{
+        background-color: var(--azul-menos-escuro);
+        margin-top: 60px;
+        padding: 20px 0;
+        font-size: 1rem;
+    }
+}

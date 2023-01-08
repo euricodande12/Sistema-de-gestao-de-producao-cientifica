@@ -46,10 +46,10 @@ input::placeholder{
 /* --------- x --------- Segunda seção --------- x ---------*/
 .segunda-secao{ /*Para todas as seções que possuem artigos de publicações*/
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 30px 60px;
+    padding: 30px 20px;
     width: 100vw;
 }
 
@@ -59,6 +59,11 @@ input::placeholder{
     border: 3px solid var(--azul-mais-escuro);
     border-radius: 5px;
     width: 300px;
+    margin-left: 20px;
+
+}
+.artigo:first-of-type{
+    margin-left: 0;
 }
 
 .paragrafo{
@@ -121,4 +126,34 @@ input::placeholder{
     background-color: white;
     cursor: pointer;
 }
-/* --------- x --------- Terceira seção --------- x ---------*/
+/* --------- x --------- Responsividade --------- x ---------*/
+
+@media screen and (max-width: 1288px) {
+    .artigo-4{
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    
+}
+
+@media screen and (max-width: 962px) {
+    .none{
+        display: none;
+    }
+    .artigo-4{
+        margin-left: 20px;
+    }
+    
+    .artigo-3{
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .artigo{
+        margin: 0 0 20px 0;
+    }
+    
+
+}

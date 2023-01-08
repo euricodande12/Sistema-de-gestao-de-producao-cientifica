@@ -6,7 +6,6 @@ body{
 
 .primeira-secao{
     padding: 40px 50px;
-    margin-bottom: 100px;
 }
 
 h2.titulo-2{
@@ -14,7 +13,7 @@ h2.titulo-2{
     font-weight: bold;
     text-align: center;
     color: var(--azul-mais-escuro);
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
 .dado-do-pesquisador{
@@ -27,7 +26,7 @@ h2.titulo-2{
     width: 100vw;
     display: flex;
     justify-content: center;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .botao-1{

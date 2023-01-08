@@ -41,6 +41,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .primeiro-titulo-da-pagina, .segundo-titulo-da-pagina{
@@ -239,3 +240,37 @@ textarea{
     margin-bottom: 30px !important;
 }
 
+
+@media screen and (max-width:852px){
+    .section-logo-do-cabecalho{
+        max-width: 2vw;
+        padding: 0 10px;
+    }
+
+    /* ---------- x ---------- Barras ---------- x ----------*/
+    .div-barras{
+        padding: 0 80px;
+    }
+
+    .barra{
+        width: 50px;
+    }
+
+    .primeiro-titulo-da-pagina{
+        font-size: 1.8rem;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .segundo-titulo-da-pagina{
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    .segunda-secao-da-parte-principal{
+        padding: 0 40px;
+    }
+
+    .formulario{
+        width: 99%;
+    }
+}

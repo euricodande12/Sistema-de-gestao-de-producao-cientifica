@@ -3,6 +3,10 @@ function Retroceder(){
     return window.history.back();
 }
 
+function IrPara(){
+    window.open('./pagina-inicial-administrador.html');
+}
+
 function Selecionar(){
     var select = window.document.querySelector("select");
     var opcao = select.options[select.selectedIndex].text;

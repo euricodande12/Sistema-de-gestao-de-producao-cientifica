@@ -148,3 +148,29 @@ textarea::placeholder{
     width: 100vw;
     padding: 0 25%;
 }
+
+
+@media screen and (max-width:852px){
+    body{
+        overflow-y: auto;
+    }
+    
+    .section-logo-do-cabecalho{
+        max-width: 2vw;
+        padding: 0 10px;
+    }
+
+    .primeiro-titulo-da-pagina{
+        font-size: 1.8rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .segunda-secao-da-parte-principal{
+        padding: 30px 40px;
+    }
+
+    .formulario{
+        width: 99%;
+    }
+}
