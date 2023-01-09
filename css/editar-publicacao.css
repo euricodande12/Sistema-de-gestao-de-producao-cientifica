@@ -173,4 +173,24 @@ textarea::placeholder{
     .formulario{
         width: 99%;
     }
+
+    .div-1{
+        flex-direction: column;
+    }
+    
+    .input-nome{
+        width: 100%;
+    }
+    
+    .select-tipo{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .botao-1{
+        font-size: 1rem;
+    }
+    .botao-avancar{
+        font-size: 1rem;
+    }
 }

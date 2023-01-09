@@ -146,3 +146,12 @@ legend{
 .input-nome-do-administrador, .input-email-do-administrador{
     width: 49%;
 }
+
+@media screen and (max-width: 1288px) {
+    .field-formulario-1{
+        flex-direction: column;
+    }
+    .input-nome-do-administrador, .input-email-do-administrador{
+        width: 100%;
+    }
+}

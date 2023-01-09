@@ -192,10 +192,44 @@ input::placeholder{
         display: none;
     }
 
+    .primeiro-titulo-da-pagina{
+        font-size: 2rem;
+        margin-top: 40px;
+
+    }
+    
+    .segundo-titulo-da-pagina{
+        font-size: 1.4rem;
+    }
+
+    .divisao-do-formulario-1, .divisao-do-formulario-2, .divisao-do-formulario-5, .divisao-do-formulario-6, .divisao-do-formulario-7, 
+    .divisao-do-formulario-8{
+        flex-direction: column;
+    }
+
+    .input-nome-do-pesquisador, .input-email-do-pesquisador, .input-senha-do-pesquisador, 
+    .input-reintroduzir-senha-do-pesquisador, .input-senha-da-instituicao, .input-reintroduzir-senha-da-instituicao,
+    .input-nome-do-administrador, .input-email-do-administrador, .input-senha-do-administrador, .input-reintroduzir-senha-do-administrador,
+    .input-codigo-aleatorio-do-administrador{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .input-nome-do-pesquisador, .input-email-do-pesquisador, .input-senha-do-pesquisador, 
+    .input-senha-da-instituicao, .input-nome-do-administrador, .input-senha-do-administrador,
+    .input-codigo-aleatorio-do-administrador{
+        width: 100%;
+        font-size: 0.9rem;
+        margin-bottom: 30px;
+    }
+
+    .botao-enviar-codigo{
+        width: 100%;
+    }
     .rodape{
         background-color: var(--azul-menos-escuro);
         margin-top: 60px;
-        padding: 20px 0;
-        font-size: 1rem;
+        padding: 20px 10px;
+        font-size: 0.8rem;
     }
 }

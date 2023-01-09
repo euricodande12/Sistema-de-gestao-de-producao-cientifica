@@ -169,3 +169,13 @@ legend{
 .input-nome-da-instituicao{
     width: 100%;
 }
+
+@media screen and (max-width:852px){
+    .field-formulario-1, .divisao-do-formulario-2{
+        flex-direction: column;
+    }
+
+    .input-nome-do-pesquisador, .input-email-do-pesquisador, .input-sigla, .input-pais{
+        width: 100%;
+    }
+}

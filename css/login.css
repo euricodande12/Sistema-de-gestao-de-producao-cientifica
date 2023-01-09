@@ -172,10 +172,21 @@ input::placeholder{
         border: 2.5px solid var(--azul-mais-escuro);
     }
 
+    input, select{
+        padding: 10px;
+        font-size: 0.8rem;
+        margin-bottom: 50px;
+    }
+
+    .botao-senha{
+        font-size: 0.8rem;
+    }
+
+    
     .rodape{
         background-color: var(--azul-menos-escuro);
         margin-top: 60px;
-        padding: 20px 0;
+        padding: 20px 10px;
         font-size: 1rem;
     }
 }

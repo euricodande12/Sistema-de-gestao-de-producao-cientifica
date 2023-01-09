@@ -4,12 +4,12 @@ function Retroceder(){
 }
 
 function IrPara(){
-    window.open('./pagina-inicial-administrador.html');
+    window.open('./pagina-inicial-administrador.html', '_self');
 }
 
 function Selecionar(){
     var select = window.document.querySelector("select");
-    var opcao = select.options[select.selectedIndex].text;
+    var opcao = select.options[select.selectedIndex].value;
     return opcao;
 }
 //Função para entrar (temporária)

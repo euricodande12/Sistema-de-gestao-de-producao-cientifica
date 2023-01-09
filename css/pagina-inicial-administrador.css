@@ -67,3 +67,9 @@
 img{
     fill: blue;
 }
+
+@media screen and (max-width: 1288px) {
+    .none{
+        display: none;
+    }
+}
