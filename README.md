@@ -3,4 +3,4 @@ Sistema para gestão de produção científica
 
 Projeto do estágio.
 
-Status: Em andamento...
+<h5 style="color: orange;">Status: Em andamento...</h5>
