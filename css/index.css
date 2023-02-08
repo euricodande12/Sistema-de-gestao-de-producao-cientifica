@@ -28,7 +28,7 @@
 }
 
 .botao-do-primeiro-artigo-da-segunda-secao-da-parte-principal{
-    padding: 10px 25px;
+    padding: 6px 20px;
     font-size: 1.5rem;
     background-color: var(--azul-mais-escuro);
     color: white;
@@ -50,7 +50,7 @@
 }
 
 .ultimo-botao-da-terceira-seccao{
-    padding: 10px 25px;
+    padding: 6px 20px;
     font-size: 1.5rem;
     background-color: white;
     color: var(--azul-mais-escuro);
@@ -133,50 +133,77 @@
     margin-top: 20px;
 }
 
-.link-de-rede-social-1{
+.link-de-rede-social-1, .link-de-rede-social-2, .link-de-rede-social-3{
+    font-size: 70px;
+    color: var(--azul-mais-escuro);
+}
+
+.link-de-rede-social-1:hover, .link-de-rede-social-2:hover, .link-de-rede-social-3:hover{
+    color: var(--azul-menos-escuro);
+}
+
+.link-de-rede-social-1, .link-de-rede-social-2{
     margin-right: 30px;
 }
 
-.link-de-rede-social-3{
-    margin-left: 30px;
-}
+@media screen and (max-width:885px){
+    /*Menu mobile*/
+    .menu-mobile-section{
+        display: initial;
+    }
 
-@media screen and (max-width:852px){
+    .open{
+        display: flex;
+    }
+    
     .row{
         flex-direction: row;
     }
+
     .section-logo-do-cabecalho{
-        max-width: 6w;
+        max-width: 90vw;
         padding: 0 10px;
     }
     
     .barra-de-navegacao{
-        width: 94vw;
+        width: 10vw;
         justify-content: space-between;
     }
 
-    .section-lista-de-links{
-        width: 64vw;
-        padding-left: 40px;
-    }
-    
-    .lista-de-links{
-        width: 90%;
+    .botao-menu-icon{
+        background-color: transparent;
+        font-size: 40px;
+        color: var(--azul-mais-escuro);
     }
 
-    .lista-de-botoes{
-        width: 30vw;
-        padding-right: 20px;
+    .botao-menu-icon:hover{
+        color: var(--azul-menos-escuro);
+        cursor: pointer;
     }
 
-    .botao-da-secao-de-botoes-do-cabecalho{
-        padding: 3px 2px;
-        margin: 0;
+    .botao-menu-icon-2{
+        display: none;
     }
 
-    .btn-login-nav-primeiro{
-        margin-top: 10px;
-        order: 1;
+    .section-lista-de-links-mobile{
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .lista-de-links-mobile{
+        padding-bottom: 5px;
+    }
+
+    .lista-de-botoes-mobile{
+        padding-bottom: 5px;
+    }
+
+    .padding-tb{
+        padding: 5px 0;
+    }
+
+    .margin-bottom{
+        margin-bottom: 18px;
     }
 
     .none{
@@ -213,16 +240,139 @@
         flex-direction: column-reverse;
     }
 
+    .primeiro-artigo-da-segunda-secao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .terceira-secao-da-parte-principal{
         flex-direction: column;
         margin-top: 70px;
         margin-bottom: 40px;
     }
 
-    .rodape{
-        background-color: var(--azul-menos-escuro);
-        margin-top: 60px;
-        padding: 20px 10px;
-        font-size: 0.8rem;
+    .link-de-rede-social-1, .link-de-rede-social-2, .link-de-rede-social-3{
+        font-size: 50px;
     }
+    
+    .link-de-rede-social-1, .link-de-rede-social-2{
+        margin-right: 10px;
+    }
+
+    .rodape{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .primeiro-link-do-rodape{
+        margin-bottom: 15px;
+    }
+
+    .segunda-seccao-do-rodape{
+        padding: 15px 0;
+    }
+
+}
+
+@media screen and (max-width:430px){
+
+    .row{
+        flex-direction: row;
+    }
+
+    .section-logo-do-cabecalho{
+        max-width: 86vw;
+        padding: 0 10px;
+    }
+    
+    .barra-de-navegacao{
+        width: 14vw;
+        justify-content: space-between;
+    }
+
+    .botao-menu-icon{
+        background-color: transparent;
+        font-size: 40px;
+        color: var(--azul-mais-escuro);
+    }
+
+    .botao-menu-icon:hover{
+        color: var(--azul-menos-escuro);
+    }
+
+    .botao-menu-icon-2{
+        display: none;
+    }
+
+    .lista-de-links-mobile{
+        padding-bottom: 5px;
+    }
+
+    .lista-de-botoes-mobile{
+        padding-bottom: 5px;
+    }
+
+    .padding-tb{
+        padding: 5px 0;
+    }
+
+    .margin-bottom{
+        margin-bottom: 18px;
+    }
+    .none{
+        display: none;
+    }
+
+    .primeiro-titulo-da-pagina, .titulo-da-secao-sobre-nos,
+    .titulo-da-secao-contacte-nos{
+        font-size: 1.7rem;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .paragrafo-do-primeiro-artigo-da-segunda-secao-da-parte-principal{
+        font-size: 1.6rem;
+        margin-top: 40px;
+    }
+
+    .paragrafo-do-segundo-artigo-da-terceira-secao-da-parte-principal,
+    .unico-paragrafo-da-quarta-seccao, .primeiro-paragrafo-da-secao-sobre-nos,
+    .segundo-paragrafo-da-secao-sobre-nos,
+    .item-da-lista-para-contactos{
+        font-size: 1.6rem;
+        margin-top: 20px;
+    }
+
+    .primeiro-paragrafo-da-secao-sobre-nos,
+    .segundo-paragrafo-da-secao-sobre-nos{
+        margin-bottom: 40px;
+    }
+
+    /* ----- x ----- Segunda Seção ----- x -----*/
+    .segunda-secao-da-parte-principal{
+        flex-direction: column-reverse;
+    }
+
+    .primeiro-artigo-da-segunda-secao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .terceira-secao-da-parte-principal{
+        flex-direction: column;
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+
+    .link-de-rede-social-1, .link-de-rede-social-2, .link-de-rede-social-3{
+        font-size: 50px;
+    }
+    
+    .link-de-rede-social-1, .link-de-rede-social-2{
+        margin-right: 10px;
+    }
+
+    
 }

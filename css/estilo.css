@@ -22,6 +22,7 @@ body{
 .cabecalho{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 5px;
     width: 100vw;
 }
@@ -96,7 +97,7 @@ button{
 }
 
 .botao-da-secao-de-botoes-do-cabecalho{
-    padding: 5px 10px;
+    padding: 1px 10px;
     font-size: 1rem;
 }
 
@@ -125,6 +126,24 @@ button{
     color: var(--azul-mais-escuro);
     background-color: white;
     border: 2px solid var(--azul-mais-escuro);
+}
+
+/* Menu mobile */
+.menu-mobile-section{
+    display: none;
+}
+
+.section-lista-de-links-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    display: none;
+}
+
+.lista-de-botoes-mobile{
+    display: flex;
+    flex-direction: column;
 }
 
 main{
@@ -216,7 +235,7 @@ main{
     }
 
     .item-da-lista-de-links{
-        font-size: 1rem; 
+        font-size: 1.4rem; 
     }
 
     .botao-da-secao-de-botoes-do-cabecalho{
@@ -239,7 +258,7 @@ main{
 
 }
 
-@media screen and (max-width:852px){
+@media screen and (max-width:885px){
     .section-logo-do-cabecalho{
         max-width: 6w;
         padding: 0 10px;
@@ -276,8 +295,9 @@ main{
 
     .rodape{
         background-color: var(--azul-menos-escuro);
-        margin-top: 60px;
-        padding: 20px 10px;
-        font-size: 0.8rem;
+        margin-top: 30px;
+        padding: 10px 40px;
+        font-size: 1.1rem;
+        justify-content: space-between;
     }
 }
