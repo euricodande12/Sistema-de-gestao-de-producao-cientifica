@@ -252,6 +252,19 @@
         margin-bottom: 40px;
     }
 
+    .imagem-da-segunda-secao-da-parte-principal, .imagem-da-terceira-secao-da-parte-principal{
+        width: 70%;
+    }
+
+    .primeiro-artigo-da-terceira-secao, .segundo-artigo-da-terceira-secao{
+        display: flex;
+        justify-content: center;
+    }
+
+    .paragrafo-do-segundo-artigo-da-terceira-secao-da-parte-principal{
+        text-align: center;
+    }
+    
     .link-de-rede-social-1, .link-de-rede-social-2, .link-de-rede-social-3{
         font-size: 50px;
     }
