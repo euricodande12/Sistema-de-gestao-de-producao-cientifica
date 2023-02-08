@@ -4,8 +4,20 @@ body{
     overflow: hidden;
 }
 
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .primeira-secao{
-    padding: 40px 50px;
+    padding: 5px 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 h2.titulo-2{
@@ -13,7 +25,7 @@ h2.titulo-2{
     font-weight: bold;
     text-align: center;
     color: var(--azul-mais-escuro);
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .dado-do-pesquisador{
@@ -43,4 +55,20 @@ h2.titulo-2{
     cursor: pointer;
     background-color: white;
     color:var(--azul-mais-escuro);
+}
+
+@media screen and (max-width:500px){
+    body{
+        overflow: auto;
+    }
+
+    h2.titulo-2{
+        font-size: 1.5rem;
+    }
+
+    .botao-1{
+        padding: 8px 100px;
+        font-size: 1.2rem;
+    }
+
 }
