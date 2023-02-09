@@ -2,13 +2,11 @@ body{
     overflow-y: hidden;
 }
 
-/* ---------- x ---------- Cabeçalho ---------- x ----------*/
-.cabecalho{
-    padding: 2px 5px;
-}
+/* ---------- x ---------- Seções ---------- x ----------*/
 
-.secao-passo-1, .secao-passo-2-1, .secao-passo-2-2, .secao-passo-3, .secao-passo-5{
+.secao-passo-1, .secao-passo-2-1, .secao-passo-2-2, .secao-passo-3, .secao-passo-4, .secao-passo-5{
     height: 100vh;
+    padding: 40px 0;
 }
 
 .lista-de-botoes{
@@ -241,19 +239,17 @@ textarea{
 }
 
 
-@media screen and (max-width:852px){
-    .section-logo-do-cabecalho{
-        max-width: 2vw;
-        padding: 0 10px;
-    }
-
+@media screen and (max-width:885px){
     /* ---------- x ---------- Barras ---------- x ----------*/
     .div-barras{
         padding: 0 80px;
+        margin: 30px 0;
     }
 
     .barra{
-        width: 50px;
+        width:30px;
+        height: 30px;
+        border-radius: 5px;
     }
 
     .primeiro-titulo-da-pagina{
@@ -272,6 +268,85 @@ textarea{
 
     .formulario{
         width: 99%;
+    }
+}
+
+@media screen and (max-width:430px){
+    body{
+        overflow: auto;
+    }
+
+    /* ---------- x ---------- Barras ---------- x ----------*/
+    .div-barras{
+        padding: 0 80px;
+        margin: 0;
+    }
+
+    .barra{
+        width: 15px;
+        height: 15px;
+        border-radius: 50px;
+    }
+
+    /* ---------- x ---------- Seções ---------- x ----------*/
+    .secao-passo-1, .secao-passo-2-1, .secao-passo-2-2, .secao-passo-3, .secao-passo-4, .secao-passo-5{
+        height: 100vh;
+        padding-top: 30px;
+    }
+
+    .primeiro-titulo-da-pagina{
+        font-size: 1rem;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .segundo-titulo-da-pagina{
+        display: none;
+    }
+    .segunda-secao-da-parte-principal{
+        padding: 0 20px;
+    }
+
+    .formulario{
+        width: 99%;
+    }
+
+    input, select{
+        padding: 5px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    textarea{
+        height: 270px;
+    }
+
+    svg{
+        width: 200px;
+        height: 300px;
+    }
+
+    .botao-1{
+        font-size: 1.2rem;
+        margin-top: 40px;
+        border: 2px solid var(--azul-mais-escuro);
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .botao-2{
+        font-size: 1.2rem;
+        margin-top: 20px;
+        border: 2px solid var(--azul-mais-escuro);
+        text-align: center;
+        padding: 5px 0;
+    }
+
+
+    .divisao-do-formulario{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
 
 }
