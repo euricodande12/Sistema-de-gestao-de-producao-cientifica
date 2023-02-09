@@ -137,6 +137,7 @@ input::placeholder{
     display: flex;
     justify-content: center;
 }
+
 /* ---------- x ---------- Terceira seção ---------- x ----------*/
 
 .botao-enviar-codigo{
@@ -150,42 +151,64 @@ input::placeholder{
     cursor: pointer;
 }
 
-@media screen and (max-width:852px){
+@media screen and (max-width:885px){
+    /*Menu mobile*/
+    .menu-mobile-section{
+        display: initial;
+    }
+
+    .open{
+        display: flex;
+    }
+    
     .row{
         flex-direction: row;
     }
+
     .section-logo-do-cabecalho{
-        max-width: 6w;
+        max-width: 90vw;
         padding: 0 10px;
     }
     
     .barra-de-navegacao{
-        width: 94vw;
+        width: 10vw;
         justify-content: space-between;
     }
 
-    .section-lista-de-links{
-        width: 64vw;
-        padding-left: 40px;
-    }
-    
-    .lista-de-links{
-        width: 90%;
+    .botao-menu-icon{
+        background-color: transparent;
+        font-size: 40px;
+        color: var(--azul-mais-escuro);
     }
 
-    .lista-de-botoes{
-        width: 30vw;
+    .botao-menu-icon:hover{
+        color: var(--azul-menos-escuro);
+        cursor: pointer;
     }
 
-    .botao-da-secao-de-botoes-do-cabecalho{
-        padding: 3px 2px;
-        width: 90px;
-        margin: 0;
+    .botao-menu-icon-2{
+        display: none;
     }
 
-    .btn-login-nav-primeiro{
-        margin-top: 10px;
-        order: 1;
+    .section-lista-de-links-mobile{
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .lista-de-links-mobile{
+        padding-bottom: 5px;
+    }
+
+    .lista-de-botoes-mobile{
+        padding-bottom: 5px;
+    }
+
+    .padding-tb{
+        padding: 5px 0;
+    }
+
+    .margin-bottom{
+        margin-bottom: 18px;
     }
 
     .none{
@@ -225,11 +248,102 @@ input::placeholder{
 
     .botao-enviar-codigo{
         width: 100%;
+        padding: 10px 0;
     }
+
     .rodape{
-        background-color: var(--azul-menos-escuro);
-        margin-top: 60px;
-        padding: 20px 10px;
-        font-size: 0.8rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .primeiro-link-do-rodape{
+        margin-bottom: 15px;
+    }
+
+    .segunda-seccao-do-rodape{
+        padding: 15px 0;
+    }
+}
+
+@media screen and (max-width:430px){
+    .row{
+        flex-direction: row;
+    }
+
+    .section-logo-do-cabecalho{
+        max-width: 86vw;
+        padding: 0 10px;
+    }
+    
+    .barra-de-navegacao{
+        width: 14vw;
+        justify-content: space-between;
+    }
+
+    .botao-menu-icon{
+        background-color: transparent;
+        font-size: 40px;
+        color: var(--azul-mais-escuro);
+    }
+
+    .botao-menu-icon:hover{
+        color: var(--azul-menos-escuro);
+    }
+
+    .botao-menu-icon-2{
+        display: none;
+    }
+
+    .lista-de-links-mobile{
+        padding-bottom: 5px;
+    }
+
+    .lista-de-botoes-mobile{
+        padding-bottom: 5px;
+    }
+
+    .primeiro-titulo-da-pagina{
+        font-size: 1.8rem;
+    }
+
+    .segunda-secao-da-parte-principal, .terceira-secao-da-parte-principal {
+        padding: 0 0;
+    }
+
+    .field-formulario-1, .field-formulario-2, .field-formulario-3 {
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .input-nome-do-pesquisador, .input-email-do-pesquisador, .input-senha-do-pesquisador, 
+    .input-reintroduzir-senha-do-pesquisador, .input-senha-da-instituicao, .input-reintroduzir-senha-da-instituicao,
+    .input-nome-do-administrador, .input-email-do-administrador, .input-senha-do-administrador, .input-reintroduzir-senha-do-administrador,
+    .input-codigo-aleatorio-do-administrador{
+        width: 100%;
+        font-size: 0.9rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .input-nome-do-pesquisador, .input-email-do-pesquisador, .input-senha-do-pesquisador, .input-nome-da-instituicao,
+    .input-senha-da-instituicao, .input-nome-do-administrador, .input-senha-do-administrador,
+    .input-codigo-aleatorio-do-administrador{
+        width: 100%;
+        font-size: 0.9rem;
+        margin-bottom: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .botao-enviar-codigo{
+        width: 100%;
+        padding: 7px 0;
+    }
+
+    .botao-do-cadastro{
+        padding: 8px 80px;
+        font-size: 1.3rem;
+        margin-top: 5px;
+        margin-bottom: 30px;
     }
 }
