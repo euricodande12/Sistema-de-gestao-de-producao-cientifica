@@ -1,6 +1,6 @@
 //Função para retroceder
 function Retroceder(){
-    return window.history.back();
+    window.history.back();
 }
 
 function IrPara(){
@@ -12,14 +12,15 @@ function Selecionar(){
     var opcao = select.options[select.selectedIndex].value;
     return opcao;
 }
+
 //Função para entrar (temporária)
 
 
 function Entrar(){
     if (Selecionar() == "Pesquisador")
-    window.open('./pagina-inicial-pesquisador.html');
+    window.open('./pagina-inicial-pesquisador.html', 'self');
     else if(Selecionar() == "Administrador")
-    window.open('./pagina-inicial-administrador.html');
+    window.open('./pagina-inicial-administrador.html', 'self');
     else
     window.alert("Erro, erro, erro!")
 }
