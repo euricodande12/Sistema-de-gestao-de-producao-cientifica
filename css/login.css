@@ -94,7 +94,7 @@ input::placeholder{
     cursor: pointer;
 }
 
-.botao-do-cadastro{
+.botao-do-cadastro{/*Botão de login*/
     background-color: var(--azul-mais-escuro);
     color: white;
     width: 100%;
@@ -109,23 +109,69 @@ input::placeholder{
 
 }
 
-@media screen and (max-width:852px){
+@media screen and (max-width:885px){
+
+    /*Menu mobile*/
+    .menu-mobile-section{
+        display: initial;
+    }
+
+    .open{
+        display: flex;
+    }
+    
     .row{
         flex-direction: row;
     }
+
     .section-logo-do-cabecalho{
-        max-width: 6w;
+        max-width: 90vw;
         padding: 0 10px;
     }
     
     .barra-de-navegacao{
-        width: 94vw;
+        width: 10vw;
         justify-content: space-between;
     }
 
-    .section-lista-de-links{
-        width: 64vw;
-        padding-left: 40px;
+    .botao-menu-icon{
+        background-color: transparent;
+        font-size: 40px;
+        color: var(--azul-mais-escuro);
+    }
+
+    .botao-menu-icon:hover{
+        color: var(--azul-menos-escuro);
+        cursor: pointer;
+    }
+
+    .botao-menu-icon-2{
+        display: none;
+    }
+
+    .section-lista-de-links-mobile{
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .lista-de-links-mobile{
+        padding-bottom: 5px;
+    }
+
+    .lista-de-botoes-mobile{
+        padding-bottom: 5px;
+    }
+
+    .padding-tb{
+        padding: 5px 0;
+    }
+
+    .margin-bottom{
+        margin-bottom: 18px;
+    }
+
+    .none{
+        display: none;
     }
     
     .lista-de-links{
@@ -137,8 +183,7 @@ input::placeholder{
     }
 
     .botao-da-secao-de-botoes-do-cabecalho{
-        padding: 3px 2px;
-        width: 80px;
+        padding: 4px 1px;
         margin: 0;
     }
 
@@ -147,27 +192,24 @@ input::placeholder{
         order: 1;
     }
 
-    .none{
-        display: none;
-    }
-
     .primeiro-titulo-da-pagina{
         font-size: 2.2rem;
         margin-top: 40px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     
     .segundo-titulo-da-pagina{
         font-size: 1.3rem;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
     }
 
     .formulario{
         width: 99%;
+        margin-bottom: 82px;
     }
     
     .field-formulario{
-        padding: 8vh 4vw;
+        padding: 40px 30px;
         border-radius: 7px;
         border: 2.5px solid var(--azul-mais-escuro);
     }
@@ -175,18 +217,83 @@ input::placeholder{
     input, select{
         padding: 10px;
         font-size: 0.8rem;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     .botao-senha{
         font-size: 0.8rem;
     }
-
     
+    .botao-do-cadastro{
+        padding: 8px 40px;
+        font-size: 1.3rem;
+        margin-top: 30px;
+    }
+
     .rodape{
-        background-color: var(--azul-menos-escuro);
-        margin-top: 60px;
-        padding: 20px 10px;
-        font-size: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .primeiro-link-do-rodape{
+        margin-bottom: 15px;
+    }
+
+    .segunda-seccao-do-rodape{
+        padding: 15px 0;
+    }
+}
+
+@media screen and (max-width:430px){
+    .row{
+        flex-direction: row;
+    }
+
+    .section-logo-do-cabecalho{
+        max-width: 86vw;
+        padding: 0 10px;
+    }
+    
+    .barra-de-navegacao{
+        width: 14vw;
+        justify-content: space-between;
+    }
+
+    .botao-menu-icon{
+        background-color: transparent;
+        font-size: 40px;
+        color: var(--azul-mais-escuro);
+    }
+
+    .botao-menu-icon:hover{
+        color: var(--azul-menos-escuro);
+    }
+
+    .botao-menu-icon-2{
+        display: none;
+    }
+
+    .lista-de-links-mobile{
+        padding-bottom: 5px;
+    }
+
+    .lista-de-botoes-mobile{
+        padding-bottom: 5px;
+    }
+
+    .primeiro-titulo-da-pagina{
+        font-size: 1.8rem;
+    }
+
+    .segundo-titulo-da-pagina{
+        font-size: 1.2rem;
+    }
+
+    .segunda-secao-da-parte-principal, .terceira-secao-da-parte-principal {
+        padding: 0 20px;
+    }
+
+    .formulario{
+        margin-bottom: 42px;
     }
 }
