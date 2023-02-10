@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/ver-publicacoes-pesquisador-administrador.css">
     <link rel="stylesheet" href="css/ver-publicacoes-administrador.css">
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@1000&display=swap" rel="stylesheet">
@@ -26,32 +27,65 @@
         <!-- x ---------- Início da barra de navegação do cabeçalho ---------- x -->
         <nav class="barra-de-navegacao">
             <!-- x ---------- Início da primeira seção da barra de navegação do cabeçalho - Seção de links ---------- x -->
-            <section class="section-lista-de-links">
+            <section class="section-lista-de-links none">
                 <!-- x ---------- Início da lista de links da primeira seção da barra de navegação do cabeçalho ---------- x -->
                 <ul class="lista-de-links">
                     <li class="item-da-lista-de-links"><a href="pagina-inicial-administrador.html" class="link-da-lista ">Página inicial</a></li><!-- Primeiro link da lista -->
-                    <li class="item-da-lista-de-links ativo"><a href="#" class="link-da-lista none">Ver publicações</a></li><!-- Segundo link da lista -->
-                    <li class="item-da-lista-de-links none"><a href="ver-pesquisadores.html" class="link-da-lista">Ver pesquisadores</a></li><!-- Terceiro link da lista -->
-                    <li class="item-da-lista-de-links "><button class="link-da-lista item-pesquisador none" disabled>Administrador
-                        <svg width="40" height="50" viewBox="0 0 71 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M35.4997 11C38.6381 11 41.6479 12.1589 43.8671 14.2218C46.0863 16.2847 47.333 19.0826 47.333 22C47.333 24.9174 46.0863 27.7153 43.8671 29.7782C41.6479 31.8411 38.6381 33 35.4997 33C32.3613 33 29.3514 31.8411 27.1322 29.7782C24.9131 27.7153 23.6663 24.9174 23.6663 22C23.6663 19.0826 24.9131 16.2847 27.1322 14.2218C29.3514 12.1589 32.3613 11 35.4997 11M35.4997 16.5C33.9305 16.5 32.4256 17.0795 31.316 18.1109C30.2064 19.1424 29.583 20.5413 29.583 22C29.583 23.4587 30.2064 24.8576 31.316 25.8891C32.4256 26.9205 33.9305 27.5 35.4997 27.5C37.0689 27.5 38.5738 26.9205 39.6834 25.8891C40.793 24.8576 41.4163 23.4587 41.4163 22C41.4163 20.5413 40.793 19.1424 39.6834 18.1109C38.5738 17.0795 37.0689 16.5 35.4997 16.5M35.4997 35.75C43.3984 35.75 59.1664 39.4075 59.1664 46.75V55H11.833V46.75C11.833 39.4075 27.6009 35.75 35.4997 35.75ZM35.4997 40.975C26.7134 40.975 17.4538 44.99 17.4538 46.75V49.775H53.5455V46.75C53.5455 44.99 44.2859 40.975 35.4997 40.975V40.975Z" fill="#A8C6CC"/>
-                            </svg></button>                                                     
+                    <li class="item-da-lista-de-links ativo"><a href="#" class="link-da-lista">Ver publicações</a></li><!-- Segundo link da lista -->
+                    <li class="item-da-lista-de-links"><a href="ver-pesquisadores.html" class="link-da-lista">Ver pesquisadores</a></li><!-- Terceiro link da lista -->
+                    <li class="item-da-lista-de-links ">
+                        <button class="link-da-lista item-pesquisador" disabled><span class="nome-do-usuario">Administrador</span>
+                            <svg width="35" height="40" viewBox="0 0 71 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.4997 11C38.6381 11 41.6479 12.1589 43.8671 14.2218C46.0863 16.2847 47.333 19.0826 47.333 22C47.333 24.9174 46.0863 27.7153 43.8671 29.7782C41.6479 31.8411 38.6381 33 35.4997 33C32.3613 33 29.3514 31.8411 27.1322 29.7782C24.9131 27.7153 23.6663 24.9174 23.6663 22C23.6663 19.0826 24.9131 16.2847 27.1322 14.2218C29.3514 12.1589 32.3613 11 35.4997 11M35.4997 16.5C33.9305 16.5 32.4256 17.0795 31.316 18.1109C30.2064 19.1424 29.583 20.5413 29.583 22C29.583 23.4587 30.2064 24.8576 31.316 25.8891C32.4256 26.9205 33.9305 27.5 35.4997 27.5C37.0689 27.5 38.5738 26.9205 39.6834 25.8891C40.793 24.8576 41.4163 23.4587 41.4163 22C41.4163 20.5413 40.793 19.1424 39.6834 18.1109C38.5738 17.0795 37.0689 16.5 35.4997 16.5M35.4997 35.75C43.3984 35.75 59.1664 39.4075 59.1664 46.75V55H11.833V46.75C11.833 39.4075 27.6009 35.75 35.4997 35.75ZM35.4997 40.975C26.7134 40.975 17.4538 44.99 17.4538 46.75V49.775H53.5455V46.75C53.5455 44.99 44.2859 40.975 35.4997 40.975V40.975Z" fill="#A8C6CC"/>
+                            </svg>
+                        </button>                                                     
                     </li><!-- Quarto link da lista -->
                     <li class="item-da-lista-de-links"><a href="index.html" class="link-da-lista">Terminar Sessão</a></li><!-- Quinto link da lista -->
                 </ul>
                 <!-- x ---------- Fim da lista de links da primeira seção da barra de navegação do cabeçalho ---------- x -->
             </section>
             <!-- x ---------- Fim da primeira seção da barra de navegação do cabeçalho ---------- x -->
+
+            <!-- x ---------- Início da segunda seção da barra de navegação do cabeçalho - Seção do menu mobile ---------- x -->
+            <section class="menu-mobile-section">
+                <button class="botao-menu-icon botao-menu-icon-1"><i class="fa-solid fa-bars icon"></i></button><!-- Botão abrir menu -->
+                <button class="botao-menu-icon botao-menu-icon-2"><i class="fa-solid fa-xmark icon"></i></button><!-- Botão fechar menu -->
+            </section>
+            <!-- x ---------- Fim da segunda seção da barra de navegação do cabeçalho - Seção do menu mobile ---------- x -->
         </nav>
         <!-- x ---------- Fim da barra de navegação do cabeçalho ---------- x -->
     </header>
+
+    <!-- x ---------- Início da seção de links mobile do cabeçalho ---------- x -->
+    <section class="section-lista-de-links-mobile">
+        <!-- x ---------- Início da lista de links moblie ---------- x -->
+        <ul class="lista-de-links-mobile padding-tb">
+            <li class="item-da-lista-de-links">
+                <button class="link-da-lista item-pesquisador" disabled><span class="nome-do-usuario">Administrador</span>
+                    <svg width="35" height="40" viewBox="0 0 71 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35.4997 11C38.6381 11 41.6479 12.1589 43.8671 14.2218C46.0863 16.2847 47.333 19.0826 47.333 22C47.333 24.9174 46.0863 27.7153 43.8671 29.7782C41.6479 31.8411 38.6381 33 35.4997 33C32.3613 33 29.3514 31.8411 27.1322 29.7782C24.9131 27.7153 23.6663 24.9174 23.6663 22C23.6663 19.0826 24.9131 16.2847 27.1322 14.2218C29.3514 12.1589 32.3613 11 35.4997 11M35.4997 16.5C33.9305 16.5 32.4256 17.0795 31.316 18.1109C30.2064 19.1424 29.583 20.5413 29.583 22C29.583 23.4587 30.2064 24.8576 31.316 25.8891C32.4256 26.9205 33.9305 27.5 35.4997 27.5C37.0689 27.5 38.5738 26.9205 39.6834 25.8891C40.793 24.8576 41.4163 23.4587 41.4163 22C41.4163 20.5413 40.793 19.1424 39.6834 18.1109C38.5738 17.0795 37.0689 16.5 35.4997 16.5M35.4997 35.75C43.3984 35.75 59.1664 39.4075 59.1664 46.75V55H11.833V46.75C11.833 39.4075 27.6009 35.75 35.4997 35.75ZM35.4997 40.975C26.7134 40.975 17.4538 44.99 17.4538 46.75V49.775H53.5455V46.75C53.5455 44.99 44.2859 40.975 35.4997 40.975V40.975Z" fill="#A8C6CC"/>
+                    </svg>
+                </button>                                                     
+            </li><!-- Quarto link da lista -->
+            <li class="item-da-lista-de-links ativo padding-tb"><a href="pagina-inicial-administrador.html" class="link-da-lista none">Página inicial</a></li><!-- Primeiro link da lista -->
+            <li class="item-da-lista-de-links padding-tb"><a href="#" class="link-da-lista">Ver publicações</a></li><!-- Segundo link da lista -->
+            <li class="item-da-lista-de-links padding-tb"><a href="ver-pesquisadores.html" class="link-da-lista">Ver pesquisadores</a></li><!-- Terceiro link da lista --> 
+        </ul>
+        <!-- x ---------- Fim da lista de links mobile ---------- x -->
+        <!-- x ---------- Início da seção de botões mobile ---------- x -->
+        <section class="lista-de-botoes-mobile">
+            <a href="index.html" class="link-da-lista margin-bottom">Terminar Sessão</a><!-- Botão fazer cadastro -->
+        </section>
+        <!-- x ---------- Fim da da seção de botões mobile ---------- x -->
+    </section>
+    <!-- x ---------- Fim da seção de links mobile do cabeçalho ---------- x -->
     <!-- x ---------- Fim do cabeçalho ---------- x -->
 
     <!-- x ---------- Início da primeira seção da parte principal do site ---------- x -->
     <section class="primeira-secao">
         <div class="div-pesquisa">
             <button class="btn-svg">
-                <svg width="60" height="45" viewBox="0 0 136 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="50" height="44" viewBox="0 0 136 129" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M111.067 112.875L75.3667 79.0125C72.5333 81.1625 69.275 82.8646 65.5917 84.1188C61.9083 85.3729 57.9889 86 53.8333 86C43.5389 86 34.8273 82.6191 27.6987 75.8574C20.5662 69.092 17 60.8271 17 51.0625C17 41.2979 20.5662 33.033 27.6987 26.2676C34.8273 19.5059 43.5389 16.125 53.8333 16.125C64.1278 16.125 72.8412 19.5059 79.9737 26.2676C87.1023 33.033 90.6667 41.2979 90.6667 51.0625C90.6667 55.0042 90.0056 58.7219 88.6833 62.2156C87.3611 65.7094 85.5667 68.8 83.3 71.4875L119 105.35L111.067 112.875ZM53.8333 75.25C60.9167 75.25 66.9384 72.8993 71.8987 68.198C76.8551 63.4931 79.3333 57.7812 79.3333 51.0625C79.3333 44.3438 76.8551 38.6319 71.8987 33.927C66.9384 29.2257 60.9167 26.875 53.8333 26.875C46.75 26.875 40.7282 29.2257 35.768 33.927C30.8116 38.6319 28.3333 44.3438 28.3333 51.0625C28.3333 57.7812 30.8116 63.4931 35.768 68.198C40.7282 72.8993 46.75 75.25 53.8333 75.25Z" fill="#60798E"/>
                 </svg>
             </button>
@@ -113,186 +147,186 @@
                 </div>
             </article>
             <!-- x ---------- Fim do quarto artigo da segunda seção da parte principal do site ---------- x -->
-        </section>
-        <!-- x ---------- Fim da segunda seção da parte principal do site ---------- x -->
+        
+            <!-- x ---------- Fim da segunda seção da parte principal do site ---------- x -->
 
-        <!-- x ---------------------------------------------------------------------------------------- x -->
-        <!-- x ------------------------ x ----   Segunda linha   ---- x -------------------------------- x -->
-        <!-- x ---------------------------------------------------------------------------------------- x -->
+            <!-- x ---------------------------------------------------------------------------------------- x -->
+            <!-- x ------------------------ x ----   Segunda linha   ---- x -------------------------------- x -->
+            <!-- x ---------------------------------------------------------------------------------------- x -->
 
-        <!-- x ---------- Início da terceira seção da parte principal do site ---------- x -->
-        <section class="segunda-secao">
-            <!-- x ---------- Início do primeiro artigo da terceira seção da parte principal do site ---------- x -->
-            <article class="artigo artigo-1">
-                <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
-                <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
-                <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
-                <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
-                <div class="div-botoes-2">
-                    <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
-                    <button class="btn-2 btn-2-2">Eliminar</button>
-                </div>
-            </article>
-            <!-- x ---------- Fim do primeiro artigo da terceira seção da parte principal do site ---------- x -->
+            <!-- x ---------- Início da terceira seção da parte principal do site ---------- x -->
             
-            <!-- x ---------- Início do segundo artigo da terceira seção da parte principal do site ---------- x -->
-            <article class="artigo artigo-2">
-                <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
-                <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
-                <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
-                <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
-                <div class="div-botoes-2">
-                    <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
-                    <button class="btn-2 btn-2-2">Eliminar</button>
-                </div>
-            </article>
-            <!-- x ---------- Fim do segundo artigo da terceira seção da parte principal do site ---------- x -->
+                <!-- x ---------- Início do primeiro artigo da terceira seção da parte principal do site ---------- x -->
+                <article class="artigo artigo-1">
+                    <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
+                    <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
+                    <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
+                    <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
+                    <div class="div-botoes-2">
+                        <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
+                        <button class="btn-2 btn-2-2">Eliminar</button>
+                    </div>
+                </article>
+                <!-- x ---------- Fim do primeiro artigo da terceira seção da parte principal do site ---------- x -->
+                
+                <!-- x ---------- Início do segundo artigo da terceira seção da parte principal do site ---------- x -->
+                <article class="artigo artigo-2">
+                    <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
+                    <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
+                    <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
+                    <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
+                    <div class="div-botoes-2">
+                        <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
+                        <button class="btn-2 btn-2-2">Eliminar</button>
+                    </div>
+                </article>
+                <!-- x ---------- Fim do segundo artigo da terceira seção da parte principal do site ---------- x -->
 
-            <!-- x ---------- Início do terceiro artigo da terceira seção da parte principal do site ---------- x -->
-            <article class="artigo artigo-3">
-                <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
-                <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
-                <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
-                <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
-                <div class="div-botoes-2">
-                    <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
-                    <button class="btn-2 btn-2-2">Eliminar</button>
-                </div>
-            </article>
-            <!-- x ---------- Fim do terceiro artigo da terceira seção da parte principal do site ---------- x -->
+                <!-- x ---------- Início do terceiro artigo da terceira seção da parte principal do site ---------- x -->
+                <article class="artigo artigo-3">
+                    <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
+                    <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
+                    <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
+                    <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
+                    <div class="div-botoes-2">
+                        <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
+                        <button class="btn-2 btn-2-2">Eliminar</button>
+                    </div>
+                </article>
+                <!-- x ---------- Fim do terceiro artigo da terceira seção da parte principal do site ---------- x -->
 
-            <!-- x ---------- Início do quarto artigo da terceira seção da parte principal do site ---------- x -->
-            <article class="artigo artigo-4">
-                <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
-                <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
-                <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
-                <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
-                <div class="div-botoes-2">
-                    <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
-                    <button class="btn-2 btn-2-2">Eliminar</button>
-                </div>
-            </article>
-            <!-- x ---------- Fim do quarto artigo da terceira seção da parte principal do site ---------- x -->
-        </section>
-        <!-- x ---------- Fim da terceira seção da parte principal do site ---------- x -->
-
-        <!-- x ---------------------------------------------------------------------------------------- x -->
-        <!-- x ------------------------ x ----   Terceira linha   ---- x -------------------------------- x -->
-        <!-- x ---------------------------------------------------------------------------------------- x -->
-
-        <!-- x ---------- Início da quarta seção da parte principal do site ---------- x -->
-        <section class="segunda-secao">
-            <!-- x ---------- Início do primeiro artigo da quarta seção da parte principal do site ---------- x -->
-            <article class="artigo artigo-1">
-                <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
-                <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
-                <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
-                <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
-                <div class="div-botoes-2">
-                    <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
-                    <button class="btn-2 btn-2-2">Eliminar</button>
-                </div>
-            </article>
-            <!-- x ---------- Fim do primeiro artigo da quarta seção da parte principal do site ---------- x -->
+                <!-- x ---------- Início do quarto artigo da terceira seção da parte principal do site ---------- x -->
+                <article class="artigo artigo-4">
+                    <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
+                    <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
+                    <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
+                    <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
+                    <div class="div-botoes-2">
+                        <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
+                        <button class="btn-2 btn-2-2">Eliminar</button>
+                    </div>
+                </article>
+                <!-- x ---------- Fim do quarto artigo da terceira seção da parte principal do site ---------- x -->
             
-            <!-- x ---------- Início do segundo artigo da quarta seção da parte principal do site ---------- x -->
-            <article class="artigo artigo-2">
-                <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
-                <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
-                <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
-                <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
-                <div class="div-botoes-2">
-                    <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
-                    <button class="btn-2 btn-2-2">Eliminar</button>
-                </div>
-            </article>
-            <!-- x ---------- Fim do segundo artigo da quarta seção da parte principal do site ---------- x -->
+                <!-- x ---------- Fim da terceira seção da parte principal do site ---------- x -->
 
-            <!-- x ---------- Início do terceiro artigo da quarta seção da parte principal do site ---------- x -->
-            <article class="artigo artigo-3">
-                <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
-                <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
-                <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
-                <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
-                <div class="div-botoes-2">
-                    <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
-                    <button class="btn-2 btn-2-2">Eliminar</button>
-                </div>
-            </article>
-            <!-- x ---------- Fim do terceiro artigo da quarta seção da parte principal do site ---------- x -->
+                <!-- x ---------------------------------------------------------------------------------------- x -->
+                <!-- x ------------------------ x ----   Terceira linha   ---- x -------------------------------- x -->
+                <!-- x ---------------------------------------------------------------------------------------- x -->
 
-            <!-- x ---------- Início do quarto artigo da quarta seção da parte principal do site ---------- x -->
-            <article class="artigo artigo-4">
-                <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
-                <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
-                <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
-                <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
-                <div class="div-botoes-2">
-                    <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
-                    <button class="btn-2 btn-2-2">Eliminar</button>
-                </div>
-            </article>
-            <!-- x ---------- Fim do quarto artigo da quarta seção da parte principal do site ---------- x -->
-        </section>
-        <!-- x ---------- Fim da quarta seção da parte principal do site ---------- x -->
-
-        <!-- x ---------------------------------------------------------------------------------------- x -->
-        <!-- x ------------------------ x ----   Quarta linha   ---- x -------------------------------- x -->
-        <!-- x ---------------------------------------------------------------------------------------- x -->
-
-        <!-- x ---------- Início da quinta seção da parte principal do site ---------- x -->
-        <section class="segunda-secao">
-            <!-- x ---------- Início do primeiro artigo da quinta seção da parte principal do site ---------- x -->
-            <article class="artigo artigo-1">
-                <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
-                <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
-                <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
-                <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
-                <div class="div-botoes-2">
-                    <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
-                    <button class="btn-2 btn-2-2">Eliminar</button>
-                </div>
-            </article>
-            <!-- x ---------- Fim do primeiro artigo da quinta seção da parte principal do site ---------- x -->
+                <!-- x ---------- Início da quarta seção da parte principal do site ---------- x -->
             
-            <!-- x ---------- Início do segundo artigo da quinta seção da parte principal do site ---------- x -->
-            <article class="artigo artigo-2">
-                <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
-                <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
-                <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
-                <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
-                <div class="div-botoes-2">
-                    <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
-                    <button class="btn-2 btn-2-2">Eliminar</button>
-                </div>
-            </article>
-            <!-- x ---------- Fim do segundo artigo da quinta seção da parte principal do site ---------- x -->
+                <!-- x ---------- Início do primeiro artigo da quarta seção da parte principal do site ---------- x -->
+                <article class="artigo artigo-1">
+                    <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
+                    <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
+                    <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
+                    <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
+                    <div class="div-botoes-2">
+                        <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
+                        <button class="btn-2 btn-2-2">Eliminar</button>
+                    </div>
+                </article>
+                <!-- x ---------- Fim do primeiro artigo da quarta seção da parte principal do site ---------- x -->
+                
+                <!-- x ---------- Início do segundo artigo da quarta seção da parte principal do site ---------- x -->
+                <article class="artigo artigo-2">
+                    <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
+                    <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
+                    <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
+                    <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
+                    <div class="div-botoes-2">
+                        <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
+                        <button class="btn-2 btn-2-2">Eliminar</button>
+                    </div>
+                </article>
+                <!-- x ---------- Fim do segundo artigo da quarta seção da parte principal do site ---------- x -->
 
-            <!-- x ---------- Início do terceiro artigo da quinta seção da parte principal do site ---------- x -->
-            <article class="artigo artigo-3">
-                <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
-                <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
-                <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
-                <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
-                <div class="div-botoes-2">
-                    <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
-                    <button class="btn-2 btn-2-2">Eliminar</button>
-                </div>
-            </article>
-            <!-- x ---------- Fim do terceiro artigo da quinta seção da parte principal do site ---------- x -->
+                <!-- x ---------- Início do terceiro artigo da quarta seção da parte principal do site ---------- x -->
+                <article class="artigo artigo-3">
+                    <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
+                    <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
+                    <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
+                    <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
+                    <div class="div-botoes-2">
+                        <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
+                        <button class="btn-2 btn-2-2">Eliminar</button>
+                    </div>
+                </article>
+                <!-- x ---------- Fim do terceiro artigo da quarta seção da parte principal do site ---------- x -->
 
-            <!-- x ---------- Início do quarto artigo da quinta seção da parte principal do site ---------- x -->
-            <article class="artigo artigo-4">
-                <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
-                <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
-                <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
-                <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
-                <div class="div-botoes-2">
-                    <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
-                    <button class="btn-2 btn-2-2">Eliminar</button>
-                </div>
-            </article>
-            <!-- x ---------- Fim do quarto artigo da quinta seção da parte principal do site ---------- x -->
+                <!-- x ---------- Início do quarto artigo da quarta seção da parte principal do site ---------- x -->
+                <article class="artigo artigo-4">
+                    <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
+                    <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
+                    <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
+                    <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
+                    <div class="div-botoes-2">
+                        <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
+                        <button class="btn-2 btn-2-2">Eliminar</button>
+                    </div>
+                </article>
+                <!-- x ---------- Fim do quarto artigo da quarta seção da parte principal do site ---------- x -->
+
+                <!-- x ---------- Fim da quarta seção da parte principal do site ---------- x -->
+
+                <!-- x ---------------------------------------------------------------------------------------- x -->
+                <!-- x ------------------------ x ----   Quarta linha   ---- x -------------------------------- x -->
+                <!-- x ---------------------------------------------------------------------------------------- x -->
+
+                <!-- x ---------- Início da quinta seção da parte principal do site ---------- x -->
+
+                <!-- x ---------- Início do primeiro artigo da quinta seção da parte principal do site ---------- x -->
+                <article class="artigo artigo-1">
+                    <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
+                    <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
+                    <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
+                    <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
+                    <div class="div-botoes-2">
+                        <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
+                        <button class="btn-2 btn-2-2">Eliminar</button>
+                    </div>
+                </article>
+                <!-- x ---------- Fim do primeiro artigo da quinta seção da parte principal do site ---------- x -->
+                
+                <!-- x ---------- Início do segundo artigo da quinta seção da parte principal do site ---------- x -->
+                <article class="artigo artigo-2">
+                    <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
+                    <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
+                    <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
+                    <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
+                    <div class="div-botoes-2">
+                        <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
+                        <button class="btn-2 btn-2-2">Eliminar</button>
+                    </div>
+                </article>
+                <!-- x ---------- Fim do segundo artigo da quinta seção da parte principal do site ---------- x -->
+
+                <!-- x ---------- Início do terceiro artigo da quinta seção da parte principal do site ---------- x -->
+                <article class="artigo artigo-3">
+                    <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
+                    <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
+                    <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
+                    <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
+                    <div class="div-botoes-2">
+                        <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
+                        <button class="btn-2 btn-2-2">Eliminar</button>
+                    </div>
+                </article>
+                <!-- x ---------- Fim do terceiro artigo da quinta seção da parte principal do site ---------- x -->
+
+                <!-- x ---------- Início do quarto artigo da quinta seção da parte principal do site ---------- x -->
+                <article class="artigo artigo-4">
+                    <p class="paragrafo paragrafo-1">Tipo: Artigo periódico</p>        
+                    <p class="paragrafo paragrafo-2">Título: Primeira lei de Newton</p>  
+                    <p class="paragrafo paragrafo-3">Autor: Isaac Newton</p>  
+                    <a href="./informacoes-da-publicacao.html" class="a-botao">Abrir</a>
+                    <div class="div-botoes-2">
+                        <a href="editar-publicacao.html" class="a-btn-2 a-btn-2-1">Editar</a>
+                        <button class="btn-2 btn-2-2">Eliminar</button>
+                    </div>
+                </article>
+                <!-- x ---------- Fim do quarto artigo da quinta seção da parte principal do site ---------- x -->
         </section>
         <!-- x ---------- Fim da quinta seção da parte principal do site ---------- x -->
     </main>
@@ -314,6 +348,6 @@
         <!-- x ---------- Fim da segunda seção do rodapé do site ---------- x -->
     </footer>
     <!-- x ---------- Fim do rodapé do site ---------- x -->
-
+    <script src="js/menu-mobile.js"></script>
 </body>
 </html>

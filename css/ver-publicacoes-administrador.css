@@ -33,7 +33,7 @@ input::placeholder{
 }
 
 .pesquisa{
-    width: 50%;;
+    width: 50%;
     padding: 9.5px 20px;
     font-size: 1.4rem;
     font-family: Nunito;
@@ -43,3 +43,91 @@ input::placeholder{
     border-radius: 0 5px 5px 0;
 }
 
+@media screen and (max-width: 885px) {
+    .primeira-secao{
+        width: 100vw;
+        padding: 20px 20px;
+        margin-bottom: 40px;
+    }
+    
+    .div-pesquisa{
+        width: 100vw;
+    }
+    
+    .pesquisa{
+        width: 80%;
+        padding: 11px 5px;
+        font-size: 1.3rem;
+    }
+
+    .div-botao{
+        width: 0;
+    }
+
+    .botao{
+        padding: 15px 2px;
+        font-size: 1rem;
+        font-weight: initial;
+        width: 100%;
+    }
+
+    .paragrafo{
+        font-size: 1.1rem;
+        color: var(--azul-menos-escuro);
+        margin: 10px 10px 0 20px;
+    }
+    .rodape{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .primeiro-link-do-rodape{
+        margin-bottom: 15px;
+    }
+
+    .segunda-seccao-do-rodape{
+        padding: 15px 0;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .none{
+        display: none;
+    }
+
+    .primeira-secao{
+        padding: 0 20px;
+    }
+    
+    .div-pesquisa{
+        width: 100vw;
+    }
+    
+    .pesquisa{
+        width: 90%;
+        padding: 12.5px 3px;
+        font-size: 1.1rem;
+    }
+    
+    .div-botao{
+        width: 0;
+    }
+
+    .botao{
+        padding: 15px 2px;
+        font-size: 1rem;
+        font-weight: initial;
+        width: 100%;
+    }
+
+    /* --------- x --------- Segunda seção --------- x ---------*/
+    .segunda-secao{ /*Para a seção que possui artigos de publicações*/
+        padding: 30px 20px;
+        width: 100vw;
+    }
+
+    .artigo{
+        width: 99%;
+        margin-bottom: 25px;
+    }
+}
