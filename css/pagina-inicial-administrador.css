@@ -68,8 +68,166 @@ img{
     fill: blue;
 }
 
-@media screen and (max-width: 1288px) {
+@media screen and (max-width: 885px){
+    .ativo{
+        display: none;
+    }
+
+    /*Menu mobile*/
+    .menu-mobile-section{
+        display: initial;
+    }
+
+    .open{
+        display: flex;
+    }
+    
+    .row{
+        flex-direction: row;
+    }
+
+    .section-logo-do-cabecalho{
+        max-width: 90vw;
+        padding: 0 10px;
+    }
+    
+    .barra-de-navegacao{
+        width: 10vw;
+        justify-content: space-between;
+    }
+
+    .botao-menu-icon{
+        background-color: transparent;
+        font-size: 40px;
+        color: var(--azul-mais-escuro);
+    }
+
+    .botao-menu-icon:hover{
+        color: var(--azul-menos-escuro);
+        cursor: pointer;
+    }
+
+    .botao-menu-icon-2{
+        display: none;
+    }
+
+    .section-lista-de-links-mobile{
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .lista-de-links-mobile{
+        padding-bottom: 5px;
+    }
+
+    .lista-de-botoes-mobile{
+        padding-bottom: 5px;
+    }
+
+    .padding-tb{
+        padding: 5px 0;
+    }
+
+    .margin-bottom{
+        margin-bottom: 18px;
+    }
+
+    .section-lista-de-links{
+        width: 94vw;
+        padding-left: 40px;
+    }
+    
+    .lista-de-links{
+        width: 90%;
+    }
+
     .none{
         display: none;
+    }
+
+    .link-da-lista{
+        font-size: 1.5rem;
+    }
+
+    .primeiro-titulo-da-pagina, .titulo-da-secao-sobre-nos,
+    .titulo-da-secao-contacte-nos{
+        font-size: 2.1rem;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .paragrafo{
+        font-size: 1.5rem;
+        margin-top: 40px;
+    }
+
+    .primeiro-paragrafo-da-secao-sobre-nos,
+    .segundo-paragrafo-da-secao-sobre-nos{
+        margin-bottom: 40px;
+    }
+
+    /* ----- x ----- Segunda Seção ----- x -----*/
+    .segunda-secao-da-parte-principal{
+        flex-direction: column-reverse;
+    }
+
+    .terceira-secao-da-parte-principal{
+        flex-direction: column;
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+
+    .rodape{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .primeiro-link-do-rodape{
+        margin-bottom: 15px;
+    }
+
+    .segunda-seccao-do-rodape{
+        padding: 15px 0;
+    }
+}
+
+@media screen and (max-width:430px){
+    .row{
+        flex-direction: row;
+    }
+
+    .section-logo-do-cabecalho{
+        max-width: 86vw;
+        padding: 0 10px;
+    }
+    
+    .barra-de-navegacao{
+        width: 14vw;
+        justify-content: space-between;
+    }
+
+    .primeiro-titulo-da-pagina{
+        font-size: 1.1rem;
+    }
+
+    .segundo-titulo-da-pagina{
+        font-size: 1.1rem;
+    }
+
+    .segunda-secao-da-parte-principal{
+        text-align: center;
+    }
+
+    .paragrafo{
+        font-size: 1.3rem;
+    }
+
+    article > img{
+        width: 200px;
+    }
+
+    .botao{
+        padding: 8px 40px;
+        font-size: 1.3rem;
     }
 }

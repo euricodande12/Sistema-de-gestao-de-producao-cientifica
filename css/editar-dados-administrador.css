@@ -3,20 +3,17 @@ body{
     overflow-y: hidden;
     height: 100vh;
     width: 100vw;
-}
-*/
-/* ---------- x ---------- Cabeçalho ---------- x ----------*/
-.cabecalho{
-    padding: 2px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ---------- x ---------- Principal ---------- x ----------*/
 /* ---------- x ---------- Seção de edição ---------- x ----------*/
 .primeiro-titulo-da-pagina{
-    margin: 0;
+    margin: 0 0;
+    margin-bottom: 20px;
     padding: 0;
-}
-.primeiro-titulo-da-pagina{
     font-size: 2.2rem;
 }
 
@@ -29,9 +26,9 @@ body{
     display: flex;
     flex-direction: column;
     width: 100vw;
-    padding: 20px 50px 20px 50px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding: 0 50px;
+    margin-top: 60px;
+    margin-bottom: 80px;
 }
 
 .formulario{
@@ -39,11 +36,6 @@ body{
     flex-direction: column;
     align-items: center;
     width: 100%;
-}
-
-.formulario-de-dados-do-pesquisador, .formulario-de-dados-da-instituicao{
-    width: 100%;
-    margin-bottom: 20px;
 }
 
 input, select{
@@ -127,7 +119,7 @@ select:hover{
 }
 
 
-/* ---------- x ---------- Do formulário de cadastro ---------- x ----------*/
+/* ---------- x ---------- Do formulário ---------- x ----------*/
 fieldset{
     width: 100%;
     padding: 20px 30px 0 30px;
@@ -147,11 +139,60 @@ legend{
     width: 49%;
 }
 
-@media screen and (max-width: 1288px) {
+@media screen and (max-width:885px){
     .field-formulario-1{
         flex-direction: column;
     }
+
     .input-nome-do-administrador, .input-email-do-administrador{
         width: 100%;
     }
+}
+
+@media screen and (max-width:430px){
+    body{
+        overflow: auto;
+    }
+
+    .primeiro-titulo-da-pagina{
+        font-size: 1.6rem;
+        margin-top: 30px;
+    }
+    
+    .segundo-titulo-da-pagina{
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+
+    .field-formulario-1{
+        border: none;
+        text-align: center;
+    }
+
+    legend{
+        display: none;
+    }
+
+    .div-do-formulario {
+        padding: 0 30px;
+        margin: 0 0;
+    }
+
+    .divisao-do-formulario{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    input{
+        padding: 8px;
+        font-size: 1.3rem;
+    }
+
+    .botao-1, .botao-2{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 25px;
+        
+    }
+
 }
