@@ -1,3 +1,6 @@
+.cabecalho{
+    width: 100vw;
+}
 
 /* ---------- x ---------- Primeira seção ---------- x ----------*/
 .primeira-secao{
@@ -33,7 +36,7 @@ input::placeholder{
 }
 
 .pesquisa{
-    width: 50%;;
+    width: 50%;
     padding: 9.5px 20px;
     font-size: 1.4rem;
     font-family: Nunito;
@@ -46,7 +49,7 @@ input::placeholder{
 /* --------- x --------- Segunda seção --------- x ---------*/
 .segunda-secao{ /*Para todas as seções que possuem artigos de publicações*/
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     padding: 30px 20px;
@@ -58,12 +61,8 @@ input::placeholder{
     flex-direction: column;
     border: 3px solid var(--azul-mais-escuro);
     border-radius: 5px;
-    width: 300px;
-    margin-left: 20px;
-
-}
-.artigo:first-of-type{
-    margin-left: 0;
+    width: 22%;
+    margin-bottom: 25px;
 }
 
 .paragrafo{
@@ -79,7 +78,6 @@ input::placeholder{
     background-color: var(--azul-mais-escuro);
     color: white;
     font-weight: bold;
-    border-radius: 5px;
     font-size: 1.4rem;
     margin-top: 10px;
 }
@@ -95,65 +93,200 @@ input::placeholder{
     width: 100%;
 }
 
-.a-btn-2, .btn-2{
-    width: 50%;
-    text-align: center;
-    padding: 10px 0;
-    font-weight: bold;
-    font-size: 1.4rem;
-}
-
-.a-btn-2{
-    color: white;
-    background-color: var(--verde);
-    border-radius: 5px 0 0 5px;
-}
-
-.btn-2{
-    color: white;
-    background-color: var(--vermelha);
-    border-radius: 0 5px 5px 0;
-}
-
-.a-btn-2:hover{
-    color: var(--verde);
-    background-color: white;
-    cursor: pointer;
-}
-
-.btn-2:hover{
-    color: var(--vermelha);
-    background-color: white;
-    cursor: pointer;
-}
 /* --------- x --------- Responsividade --------- x ---------*/
+@media screen and (max-width: 885px) {
+    .ativo{
+        display: none;
+    }
 
-@media screen and (max-width: 1288px) {
-    .artigo-4{
-        margin-top: 20px;
-        margin-left: 0;
+    /*Menu mobile*/
+    .menu-mobile-section{
+        display: initial;
+    }
+
+    .open{
+        display: flex;
     }
     
-}
+    .row{
+        flex-direction: row;
+    }
 
-@media screen and (max-width: 962px) {
+    .section-logo-do-cabecalho{
+        max-width: 92vw;
+        padding: 0 10px;
+    }
+    
+    .barra-de-navegacao{
+        width: 8vw;
+        justify-content: space-between;
+    }
+
+    .botao-menu-icon{
+        background-color: transparent;
+        font-size: 40px;
+        color: var(--azul-mais-escuro);
+    }
+
+    .botao-menu-icon:hover{
+        color: var(--azul-menos-escuro);
+        cursor: pointer;
+    }
+
+    .botao-menu-icon-2{
+        display: none;
+    }
+
+    .section-lista-de-links-mobile{
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .lista-de-links-mobile{
+        padding-bottom: 5px;
+    }
+
+    .lista-de-botoes-mobile{
+        padding-bottom: 5px;
+    }
+
+    .padding-tb{
+        padding: 5px 0;
+    }
+
+    .margin-bottom{
+        margin-bottom: 18px;
+    }
+
+    .section-lista-de-links{
+        width: 94vw;
+        padding-left: 40px;
+    }
+    
+    .lista-de-links{
+        width: 90%;
+    }
+
     .none{
         display: none;
     }
-    .artigo-4{
-        margin-left: 20px;
+
+    .link-da-lista{
+        font-size: 1.5rem;
+    }
+
+    .none{
+        display: none;
     }
     
-    .artigo-3{
-        margin-top: 20px;
-        margin-left: 0;
+    .div-pesquisa{
+        width: 100vw;
+    }
+
+    .pesquisa{
+        font-size: 1.4rem;
+        width: 80%;
+    }
+    
+    .div-botao{
+        width: 0;
+    }
+
+    .botao{
+        padding: 15px 2px;
+        font-size: 1rem;
+        font-weight: initial;
+        width: 100%;
+    }
+
+    /* --------- x --------- Segunda seção --------- x ---------*/
+    .segunda-secao{ /*Para todas as seções que possuem artigos de publicações*/
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px 20px;
+        width: 100vw;
+    }
+
+    .artigo{
+        display: flex;
+        flex-direction: column;
+        border: 3px solid var(--azul-mais-escuro);
+        border-radius: 5px;
+        width: 46%;
+        margin-bottom: 40px;
+    }
+
+    .paragrafo{
+        font-size: 1.1rem;
+        color: var(--azul-menos-escuro);
+        margin: 10px 10px 0 20px;
+    }
+
+    .rodape{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .primeiro-link-do-rodape{
+        margin-bottom: 15px;
+    }
+
+    .segunda-seccao-do-rodape{
+        padding: 15px 0;
     }
 }
 
-@media screen and (max-width: 650px) {
-    .artigo{
-        margin: 0 0 20px 0;
+@media screen and (max-width: 430px) {
+    .section-logo-do-cabecalho{
+        max-width: 85vw;
+        padding: 0 10px;
     }
     
+    .barra-de-navegacao{
+        width: 15vw;
+        justify-content: space-between;
+    }
 
+    .primeira-secao{
+        padding: 0 20px;
+    }
+    
+    .div-pesquisa{
+        width: 100vw;
+    }
+    
+    .pesquisa{
+        width: 90%;
+        padding: 14.5px 4px;
+        font-size: 0.9rem;
+    }
+    
+    .div-botao{
+        width: 0;
+    }
+
+    .botao{
+        padding: 15px 2px;
+        font-size: 1rem;
+        font-weight: initial;
+        width: 100%;
+    }
+
+    .a-btn-2, .btn-2, .a-botao{
+        font-size: 1.2rem;
+    }
+
+    .paragrafo{
+        font-size: 1.1rem;
+        color: var(--azul-menos-escuro);
+        margin: 10px 10px 0 20px;
+    }
+
+    .artigo{
+        width: 99%;
+        margin-bottom: 25px;
+    }
+}
 }
