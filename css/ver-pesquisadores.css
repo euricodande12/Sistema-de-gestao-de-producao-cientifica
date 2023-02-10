@@ -73,7 +73,7 @@ input::placeholder{
 
 .pesquisa{
     width: 50%;;
-    padding: 9.5px 20px;
+    padding: 8px 20px;
     font-size: 1.4rem;
     font-family: Nunito;
     border: 3px solid var(--azul-mais-escuro);
@@ -103,7 +103,6 @@ input::placeholder{
 /* --------- x --------- Segunda seção --------- x ---------*/
 .segunda-secao{ /*Para todas as seções que possuem artigos de publicações*/
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -116,7 +115,7 @@ input::placeholder{
     flex-direction: column;
     border: 3px solid var(--azul-mais-escuro);
     border-radius: 5px;
-    width: 100%;
+    width: 48%;
     margin-bottom: 50px;
 }
 
@@ -132,7 +131,6 @@ input::placeholder{
     background-color: var(--azul-mais-escuro);
     color: white;
     font-weight: bold;
-    border-radius: 5px;
     font-size: 1.4rem;
     margin-top: 10px;
 }
@@ -141,6 +139,7 @@ input::placeholder{
     cursor: pointer;
     background-color: white;
     color: var(--azul-mais-escuro);
+    transition: all 0.3s ease-in-out;
 }
 
 .div-botoes-2{
@@ -164,30 +163,110 @@ input::placeholder{
 .a-btn-2{
     color: white;
     background-color: var(--verde);
-    border-radius: 0;
 }
 
 .btn-2{
     color: white;
     background-color: var(--vermelha);
-    border-radius: 0 5px 5px 0;
+}
+
+button.btn-2-2{
+    border-radius: 0;
 }
 
 .a-btn-2:hover{
     color: var(--verde);
     background-color: white;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn-2:hover{
     color: var(--vermelha);
     background-color: white;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 1288px) {
+@media screen and (max-width: 885px){
+    .ativo{
+        display: none;
+    }
+
+    /*Menu mobile*/
+    .menu-mobile-section{
+        display: initial;
+    }
+
+    .open{
+        display: flex;
+    }
+    
+    .row{
+        flex-direction: row;
+    }
+
+    .section-logo-do-cabecalho{
+        max-width: 90vw;
+        padding: 0 10px;
+    }
+    
+    .barra-de-navegacao{
+        width: 10vw;
+        justify-content: space-between;
+    }
+
+    .botao-menu-icon{
+        background-color: transparent;
+        font-size: 40px;
+        color: var(--azul-mais-escuro);
+    }
+
+    .botao-menu-icon:hover{
+        color: var(--azul-menos-escuro);
+        cursor: pointer;
+    }
+
+    .botao-menu-icon-2{
+        display: none;
+    }
+
+    .section-lista-de-links-mobile{
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .lista-de-links-mobile{
+        padding-bottom: 5px;
+    }
+
+    .lista-de-botoes-mobile{
+        padding-bottom: 5px;
+    }
+
+    .padding-tb{
+        padding: 5px 0;
+    }
+
+    .margin-bottom{
+        margin-bottom: 18px;
+    }
+
+    .section-lista-de-links{
+        width: 94vw;
+        padding-left: 40px;
+    }
+    
+    .lista-de-links{
+        width: 90%;
+    }
+
     .none{
         display: none;
+    }
+
+    .link-da-lista{
+        font-size: 1.5rem;
     }
 
     .primeira-secao{
@@ -200,8 +279,75 @@ input::placeholder{
     }
     
     .pesquisa{
-        width: 70%;;
-        padding: 10.5px 10px;
+        width: 70%;
+        padding: 9px 10px;
+        font-size: 1.3rem;
+    }
+
+    .primeira-secao{
+        display: flex;
+        align-items: center;
+        padding: 10px 0px;
+        margin-top: 30px;
+    }
+
+    .artigo{
+        display: flex;
+        flex-direction: column;
+        border: 3px solid var(--azul-mais-escuro);
+        border-radius: 5px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .rodape{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .primeiro-link-do-rodape{
+        margin-bottom: 15px;
+    }
+
+    .segunda-seccao-do-rodape{
+        padding: 15px 0;
+    }
+}
+
+@media screen and (max-width:430px){
+    .row{
+        flex-direction: row;
+    }
+
+    .section-logo-do-cabecalho{
+        max-width: 86vw;
+        padding: 0 10px;
+    }
+    
+    .barra-de-navegacao{
+        width: 14vw;
+        justify-content: space-between;
+    }
+
+    .segunda-secao {
+        padding: 30px 15px;
+    }
+
+    .paragrafo{
+        font-size: 1.1rem;
+        margin: 10px 15px 0 15px;
+    }
+
+    .div-botoes-2{
+        margin-top: 0px;
+    }
+
+    article > img{
+        width: 200px;
+    }
+
+    .botao{
+        padding: 8px 40px;
         font-size: 1.3rem;
     }
 }
