@@ -37,8 +37,8 @@
             <section class="segunda-secao-da-parte-principal">
                 <!-- x ---------- Início do único formulário da segunda seção da parte principal do site ---------- x -->
                 <form action="" class="formulario">
-                    <input type="text" class="input-nome-do-pesquisador" placeholder="Nome do pesquisador"><!-- x --- Input do email --- x -->
-                    <input type="text" class="input-titulo-da-publicacao" placeholder="Título da publicação"><!-- x --- Input do email --- x -->
+                    <input type="text" class="input-nome-do-pesquisador" placeholder="Nome do pesquisador" id="input-nome-do-pesquisador" name="input-nome-do-pesquisador"><!-- x --- Input do email --- x -->
+                    <input type="text" class="input-titulo-da-publicacao" placeholder="Título da publicação" id="input-titulo-da-publicacao" name="input-titulo-da-publicacao"><!-- x --- Input do email --- x -->
                     <select class="select-tipo">
                         <option value="null">Selecione o tipo</option>
                         <option value="Artigo Periódico">Artigo Periódico</option>
@@ -46,7 +46,7 @@
                     </select>
                     <div class="divisao-do-formulario"><!-- x --- Início da divisão --- x -->
                         <a href="pagina-inicial-pesquisador.html" class="botao-1 botao-retroceder">Retroceder</a><!-- x --- Botão para ver as senhas --- x -->
-                        <a href="#passo-2-1" class="botao-1 botao-avancar">Avançar</a><!-- x --- Botão para dizer que esqueceu a senha --- x -->
+                        <a href="" class="botao-1 botao-avancar primeiro-botao-avancar">Avançar</a><!-- x --- Botão para dizer que esqueceu a senha --- x -->
                     </div><!-- x --- Fim da divisão --- x -->
                 </form>
                 <!-- x ---------- Fim do único formulário da segunda seção da parte principal do site ---------- x -->
@@ -86,23 +86,23 @@
                 <form action="" class="formulario">
                     <input type="text" class="input-nome-do-congresso" placeholder="Nome do congresso"><!-- x --- Input do nome do congresso --- x -->
                     <div class="div-1">
-                        <input type="text" class="input-sigla" placeholder="Sigla do congresso"><!-- x --- Input da sigla do congresso --- x -->
-                        <input type="number" class="input-ano" placeholder="Ano em que ocorreu"><!-- x --- Input do email --- x -->
+                        <input type="text" class="input-sigla" placeholder="Sigla do congresso" id="input-sigla" name="input-sigla"><!-- x --- Input da sigla do congresso --- x -->
+                        <input type="number" class="input-ano" placeholder="Ano em que ocorreu" id="input-ano" name="input-ano"><!-- x --- Input do email --- x -->
                     </div>
 
                     <div class="div-2">
-                        <input type="text" class="input-bairro" placeholder="Bairro"><!-- x --- Input do bairro --- x -->
-                        <input type="text" class="input-rua" placeholder="Rua"><!-- x --- Input da rua --- x -->
-                        <input type="text" class="input-edificio" placeholder="Edifício"><!-- x --- Input do difício --- x -->
+                        <input type="text" class="input-bairro" placeholder="Bairro" id="input-bairro" name="input-bairro"><!-- x --- Input do bairro --- x -->
+                        <input type="text" class="input-rua" placeholder="Rua" id="input-rua" name="input-rua"><!-- x --- Input da rua --- x -->
+                        <input type="text" class="input-edificio" placeholder="Edifício" id="input-edificio" name="input-edificio"><!-- x --- Input do difício --- x -->
                     </div>
                     <div class="div-3">
-                        <input type="number" class="input-numero-inicial" placeholder="Número inicial de página"><!-- x --- Input do número inicial de página --- x -->
-                        <input type="number" class="input-numero-final" placeholder="Número final de página"><!-- x --- Input do número final de página --- x -->
+                        <input type="number" class="input-numero-inicial" placeholder="Número inicial de página" id="input-numero-inicial" name="input-numero-inicial"><!-- x --- Input do número inicial de página --- x -->
+                        <input type="number" class="input-numero-final" placeholder="Número final de página" id="input-numero-final" name="input-numero-final"><!-- x --- Input do número final de página --- x -->
                     </div>
                     
                     <div class="divisao-do-formulario"><!-- x --- Início da divisão --- x -->
                         <a href="#passo-1" class="botao-2 botao-retroceder">Retroceder</a><!-- x --- Botão para ver as senhas --- x -->
-                        <a href="#passo-2-2" class="botao-2 botao-avancar">Avançar</a><!-- x --- Botão para dizer que esqueceu a senha --- x -->
+                        <a href="#passo-3" class="botao-2 botao-avancar">Avançar</a><!-- x --- Botão para dizer que esqueceu a senha --- x -->
                     </div><!-- x --- Fim da divisão --- x -->
                 </form>
                 <!-- x ---------- Fim do único formulário da segunda seção da parte principal do site ---------- x -->
@@ -139,18 +139,18 @@
             <section class="segunda-secao-da-parte-principal">
                 <!-- x ---------- Início do único formulário da segunda seção da parte principal do site ---------- x -->
                 <form action="" class="formulario">
-                    <input type="text" class="input-periodico" placeholder="Nome do periódico"><!-- x --- Input do nome do periódico--- x -->
-                    <input type="text" class="input-editora" placeholder="Nome da editora"><!-- x --- Input do nome da editora --- x -->
+                    <input type="text" class="input-periodico" placeholder="Nome do periódico" id="input-nome-do-periodico" name="input-nome-do-periodico"><!-- x --- Input do nome do periódico--- x -->
+                    <input type="text" class="input-editora" placeholder="Nome da editora" id="input-nome-da-editora" name="input-nome-da-editora"><!-- x --- Input do nome da editora --- x -->
                     <div class="div-3">
-                        <input type="number" class="input-pagina-inicial" placeholder="Número inicial de página"><!-- x --- Input do número inicial de página --- x -->
-                        <input type="number" class="input-pagina-final" placeholder="Número final de página"><!-- x --- Input do número final de página --- x -->
+                        <input type="number" class="input-pagina-inicial" placeholder="Número inicial de página" id="input-pagina-inicial" name="input-pagina-inicial"><!-- x --- Input do número inicial de página --- x -->
+                        <input type="number" class="input-pagina-final" placeholder="Número final de página" id="input-pagina-final" name="input-pagina-final"><!-- x --- Input do número final de página --- x -->
                     </div>
                     <div class="div-2">
-                        <input type="text" class="input-volume" placeholder="Volume da edição"><!-- x --- Input do bairro --- x -->
-                        <input type="text" class="input-edicao" placeholder="Número da edição"><!-- x --- Input da rua --- x -->
+                        <input type="text" class="input-volume" placeholder="Volume da edição" id="input-volume" name="input-volume"><!-- x --- Input do bairro --- x -->
+                        <input type="text" class="input-edicao" placeholder="Número da edição" id="input-edicao" name="input-edicao"><!-- x --- Input da rua --- x -->
                     </div>
                     <div class="divisao-do-formulario"><!-- x --- Início da divisão --- x -->
-                        <a href="#passo-2-1" class="botao-2 botao-retroceder">Retroceder</a><!-- x --- Botão para ver as senhas --- x -->
+                        <a href="#passo-1" class="botao-2 botao-retroceder">Retroceder</a><!-- x --- Botão para ver as senhas --- x -->
                         <a href="#passo-3" class="botao-2 botao-avancar">Avançar</a><!-- x --- Botão para dizer que esqueceu a senha --- x -->
                     </div><!-- x --- Fim da divisão --- x -->
                 </form>
@@ -186,7 +186,7 @@
             <!-- x ---------- Fim da primeira seção da parte principal do site ---------- x -->
 
             <div class="div-do-text-a-ser-publicado">
-                <textarea name="texto-a-ser-publicado" cols="30" rows="11" draggable="false"  placeholder="Escreva o texto aqui..."></textarea><!-- x --- Textarea para o texto que será publicado--- x -->
+                <textarea name="texto-a-ser-publicado" cols="30" rows="11" draggable="false"  placeholder="Escreva o texto aqui..." id="texto-a-ser-publicado" name="texto-a-ser-publicado"></textarea><!-- x --- Textarea para o texto que será publicado--- x -->
             </div>
             <!-- x ---------- Início da segunda seção da parte principal do site ---------- x -->
             <section class="segunda-secao-da-parte-principal">
@@ -232,15 +232,15 @@
              <section class="segunda-secao-da-parte-principal">
                 <!-- x ---------- Início do único formulário da segunda seção da parte principal do site ---------- x -->
                 <form action="" class="formulario">
-                    <select class="select-quantas">
+                    <select class="select-quantas" name="qtd-publicacoes-referenciadas">
                         <option value="null">Quantas publicações são referenciadas?</option>
                         <option value="1" selected>1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                     </select>
-                    <input type="text" class="input-nome-da-publicacao publicacao-1" placeholder="Nome da publicação"><!-- x --- Input do nome da publicação --- x -->
-                    <input type="text" class="input-nome-da-publicacao publicacao-2" disabled placeholder="Nome da publicação"><!-- x --- Input do nome da publicação --- x -->
-                    <input type="text" class="input-nome-da-publicacao publicacao-3" disabled placeholder="Nome da publicação"><!-- x --- Input do nome da publicação --- x -->
+                    <input type="text" class="input-nome-da-publicacao publicacao-1" placeholder="Nome da publicação" id="input-nome-da-publicacao-1" name="input-nome-da-publicacao-1"><!-- x --- Input do nome da publicação --- x -->
+                    <input type="text" class="input-nome-da-publicacao publicacao-2" disabled placeholder="Nome da publicação" id="input-nome-da-publicacao-2" name="input-nome-da-publicacao-2"><!-- x --- Input do nome da publicação --- x -->
+                    <input type="text" class="input-nome-da-publicacao publicacao-3" disabled placeholder="Nome da publicação" id="input-nome-da-publicacao-3" name="input-nome-da-publicacao-3"><!-- x --- Input do nome da publicação --- x -->
                     <div class="divisao-do-formulario"><!-- x --- Início da divisão --- x -->
                         <a href="#passo-3" class="botao-2 btn-mt botao-retroceder">Retroceder</a><!-- x --- Botão para ver as senhas --- x -->
                         <a href="#passo-5" class="botao-2 btn-mt botao-avancar">Avançar</a><!-- x --- Botão para dizer que esqueceu a senha --- x -->
@@ -295,5 +295,6 @@
         </main>
         <!-- x ---------- Fim da parte principal do site ---------- x -->
     </div>
+    <script src="js/criar-publicacao.js"></script>
 </body>
 </html>
