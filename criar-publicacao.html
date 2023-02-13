@@ -36,9 +36,9 @@
             <!-- x ---------- Início da segunda seção da parte principal do site ---------- x -->
             <section class="segunda-secao-da-parte-principal">
                 <!-- x ---------- Início do único formulário da segunda seção da parte principal do site ---------- x -->
-                <form action="" class="formulario">
-                    <input type="text" class="input-nome-do-pesquisador" placeholder="Nome do pesquisador" id="input-nome-do-pesquisador" name="input-nome-do-pesquisador"><!-- x --- Input do email --- x -->
-                    <input type="text" class="input-titulo-da-publicacao" placeholder="Título da publicação" id="input-titulo-da-publicacao" name="input-titulo-da-publicacao"><!-- x --- Input do email --- x -->
+                <form class="formulario">
+                    <input type="text" class="input-nome-do-pesquisador" placeholder="Nome do pesquisador" id="input-nome-do-pesquisador" name="input-nome-do-pesquisador" disabled><!-- x --- Input do email --- x -->
+                    <input type="text" class="input-titulo-da-publicacao" placeholder="Título da publicação" id="input-titulo-da-publicacao" name="input-titulo-da-publicacao" minlength="4"><!-- x --- Input do email --- x -->
                     <select class="select-tipo">
                         <option value="null">Selecione o tipo</option>
                         <option value="Artigo Periódico">Artigo Periódico</option>
@@ -84,10 +84,10 @@
             <section class="segunda-secao-da-parte-principal">
                 <!-- x ---------- Início do único formulário da segunda seção da parte principal do site ---------- x -->
                 <form action="" class="formulario">
-                    <input type="text" class="input-nome-do-congresso" placeholder="Nome do congresso"><!-- x --- Input do nome do congresso --- x -->
+                    <input type="text" class="input-nome-do-congresso" placeholder="Nome do congresso" id="input-nome-do-congresso" name="input-nome-do-congresso"><!-- x --- Input do nome do congresso --- x -->
                     <div class="div-1">
-                        <input type="text" class="input-sigla" placeholder="Sigla do congresso" id="input-sigla" name="input-sigla"><!-- x --- Input da sigla do congresso --- x -->
-                        <input type="number" class="input-ano" placeholder="Ano em que ocorreu" id="input-ano" name="input-ano"><!-- x --- Input do email --- x -->
+                        <input type="text" class="input-sigla" placeholder="Sigla do congresso" id="input-sigla-do-congresso" name="input-sigla-do-congresso"><!-- x --- Input da sigla do congresso --- x -->
+                        <input type="number" class="input-ano" placeholder="Ano em que ocorreu" min="1000" id="input-ano-do-congresso" name="input-ano-do-congresso"><!-- x --- Input do email --- x -->
                     </div>
 
                     <div class="div-2">
@@ -96,13 +96,13 @@
                         <input type="text" class="input-edificio" placeholder="Edifício" id="input-edificio" name="input-edificio"><!-- x --- Input do difício --- x -->
                     </div>
                     <div class="div-3">
-                        <input type="number" class="input-numero-inicial" placeholder="Número inicial de página" id="input-numero-inicial" name="input-numero-inicial"><!-- x --- Input do número inicial de página --- x -->
-                        <input type="number" class="input-numero-final" placeholder="Número final de página" id="input-numero-final" name="input-numero-final"><!-- x --- Input do número final de página --- x -->
+                        <input type="number" class="input-numero-inicial" placeholder="Número inicial de página" min="1" id="input-numero-inicial" name="input-numero-inicial"><!-- x --- Input do número inicial de página --- x -->
+                        <input type="number" class="input-numero-final" placeholder="Número final de página" min="1" id="input-numero-final" name="input-numero-final"><!-- x --- Input do número final de página --- x -->
                     </div>
                     
                     <div class="divisao-do-formulario"><!-- x --- Início da divisão --- x -->
                         <a href="#passo-1" class="botao-2 botao-retroceder">Retroceder</a><!-- x --- Botão para ver as senhas --- x -->
-                        <a href="#passo-3" class="botao-2 botao-avancar">Avançar</a><!-- x --- Botão para dizer que esqueceu a senha --- x -->
+                        <a href="#passo-3" class="botao-2 botao-avancar segundo-botao-avancar-1">Avançar</a><!-- x --- Botão para dizer que esqueceu a senha --- x -->
                     </div><!-- x --- Fim da divisão --- x -->
                 </form>
                 <!-- x ---------- Fim do único formulário da segunda seção da parte principal do site ---------- x -->
@@ -142,16 +142,16 @@
                     <input type="text" class="input-periodico" placeholder="Nome do periódico" id="input-nome-do-periodico" name="input-nome-do-periodico"><!-- x --- Input do nome do periódico--- x -->
                     <input type="text" class="input-editora" placeholder="Nome da editora" id="input-nome-da-editora" name="input-nome-da-editora"><!-- x --- Input do nome da editora --- x -->
                     <div class="div-3">
-                        <input type="number" class="input-pagina-inicial" placeholder="Número inicial de página" id="input-pagina-inicial" name="input-pagina-inicial"><!-- x --- Input do número inicial de página --- x -->
-                        <input type="number" class="input-pagina-final" placeholder="Número final de página" id="input-pagina-final" name="input-pagina-final"><!-- x --- Input do número final de página --- x -->
+                        <input type="number" class="input-pagina-inicial" placeholder="Número de página inicial" min="1" id="input-pagina-inicial" name="input-pagina-inicial"><!-- x --- Input do número inicial de página --- x -->
+                        <input type="number" class="input-pagina-final" placeholder="Número de página final" min="1" id="input-pagina-final" name="input-pagina-final"><!-- x --- Input do número final de página --- x -->
                     </div>
                     <div class="div-2">
-                        <input type="text" class="input-volume" placeholder="Volume da edição" id="input-volume" name="input-volume"><!-- x --- Input do bairro --- x -->
-                        <input type="text" class="input-edicao" placeholder="Número da edição" id="input-edicao" name="input-edicao"><!-- x --- Input da rua --- x -->
+                        <input type="number" class="input-volume" placeholder="Volume da edição" min="1" id="input-volume" name="input-volume"><!-- x --- Input do bairro --- x -->
+                        <input type="number" class="input-edicao" placeholder="Número da edição" min="1" id="input-edicao" name="input-edicao"><!-- x --- Input da rua --- x -->
                     </div>
                     <div class="divisao-do-formulario"><!-- x --- Início da divisão --- x -->
                         <a href="#passo-1" class="botao-2 botao-retroceder">Retroceder</a><!-- x --- Botão para ver as senhas --- x -->
-                        <a href="#passo-3" class="botao-2 botao-avancar">Avançar</a><!-- x --- Botão para dizer que esqueceu a senha --- x -->
+                        <a href="#passo-3" class="botao-2 botao-avancar segundo-botao-avancar-2">Avançar</a><!-- x --- Botão para dizer que esqueceu a senha --- x -->
                     </div><!-- x --- Fim da divisão --- x -->
                 </form>
                 <!-- x ---------- Fim do único formulário da segunda seção da parte principal do site ---------- x -->
@@ -181,7 +181,7 @@
             <!-- x ---------- Início da primeira seção da parte principal do site ---------- x -->
             <section class="primeira-secao-da-parte-principal">
                 <h1 class="primeiro-titulo-da-pagina">Forneça informações sobre a publicação</h1><!-- x --- Primeiro título da página --- x -->
-                <h2 class="segundo-titulo-da-pagina">Essas informações são importantíssimas.</h2><!-- x --- Segundo título da página --- x -->
+                <h2 class="segundo-titulo-da-pagina">Introduza o texto a ser publicado.</h2><!-- x --- Segundo título da página --- x -->
             </section>
             <!-- x ---------- Fim da primeira seção da parte principal do site ---------- x -->
 
@@ -193,8 +193,8 @@
                 <!-- x ---------- Início do único formulário da segunda seção da parte principal do site ---------- x -->
                 <form action="" class="formulario">
                     <div class="divisao-do-formulario"><!-- x --- Início da divisão --- x -->
-                        <a href="#passo-2-2" class="botao-2 botao-retroceder">Retroceder</a><!-- x --- Botão para ver as senhas --- x -->
-                        <a href="#passo-4" class="botao-2 botao-avancar">Avançar</a><!-- x --- Botão para dizer que esqueceu a senha --- x -->
+                        <a href="" class="botao-2 botao-retroceder botao-retroceder-passo-3">Retroceder</a><!-- x --- Botão para ver as senhas --- x -->
+                        <a href="#passo-4" class="botao-2 botao-avancar terceiro-botao-avancar">Avançar</a><!-- x --- Botão para dizer que esqueceu a senha --- x -->
                     </div><!-- x --- Fim da divisão --- x -->
                 </form>
                 <!-- x ---------- Fim do único formulário da segunda seção da parte principal do site ---------- x -->
@@ -243,7 +243,7 @@
                     <input type="text" class="input-nome-da-publicacao publicacao-3" disabled placeholder="Nome da publicação" id="input-nome-da-publicacao-3" name="input-nome-da-publicacao-3"><!-- x --- Input do nome da publicação --- x -->
                     <div class="divisao-do-formulario"><!-- x --- Início da divisão --- x -->
                         <a href="#passo-3" class="botao-2 btn-mt botao-retroceder">Retroceder</a><!-- x --- Botão para ver as senhas --- x -->
-                        <a href="#passo-5" class="botao-2 btn-mt botao-avancar">Avançar</a><!-- x --- Botão para dizer que esqueceu a senha --- x -->
+                        <a href="#passo-5" class="botao-2 btn-mt botao-avancar quarto-botao-avancar">Avançar</a><!-- x --- Botão para dizer que esqueceu a senha --- x -->
                     </div><!-- x --- Fim da divisão --- x -->
                 </form>
                 <!-- x ---------- Fim do único formulário da segunda seção da parte principal do site ---------- x -->
