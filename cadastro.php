@@ -104,7 +104,13 @@
                 </fieldset>
             </form>
             <!-- x ---------- Fim do primeiro formulário da segunda seção da parte principal do site ---------- x -->
-
+  
+            <!-- x ----------PHP ---------- x -->
+            <?php
+            
+            
+            ?>
+            <!-- x ----------PHP ---------- x -->
            <!-- x ---------- Início do segundo formulário da segunda seção da parte principal do site ---------- x -->
            <form action="" class="formulario-de-dados-da-instituicao">
             <!-- x ---------- Início do parágrafo do primeiro artigo da segunda seção da parte principal do site ---------- x -->

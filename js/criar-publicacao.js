@@ -32,7 +32,7 @@ const segundoBotaoAvancar1 = window.document.querySelector(".segundo-botao-avanc
 const segundoBotaoAvancar2 = window.document.querySelector(".segundo-botao-avancar-2"); //Passo 2-2
 const botaoRetrocederPasso3 = window.document.querySelector(".botao-retroceder-passo-3"); //Passo 3 retroceder
 const terceiroBotaoAvancar = window.document.querySelector(".terceiro-botao-avancar");  //Passo 3 avançar
-
+const quartoBotaoAvancar = window.document.querySelector(".quarto-botao-avancar"); //Passo 4 avançar
 //Select
 const primeiroSelect = window.document.getElementsByTagName("select")[0];
 const segundoSelect = window.document.getElementsByTagName("select")[1];
@@ -395,15 +395,180 @@ segundoSelect.addEventListener("change", ()=>{
     if(getOpcaoSelecionadaNoSegundoSelect() == 1){
         inputNomeDaPublicacaoReferenciada2.setAttribute("disabled", "");
         inputNomeDaPublicacaoReferenciada3.setAttribute("disabled", "");
+
+        //Esvaziar caixas de texto
+        inputNomeDaPublicacaoReferenciada2.value = "";
+        inputNomeDaPublicacaoReferenciada3.value = "";
     }
     else if(getOpcaoSelecionadaNoSegundoSelect() == 2){
         inputNomeDaPublicacaoReferenciada2.removeAttribute("disabled");
         inputNomeDaPublicacaoReferenciada3.setAttribute("disabled", "");
+
+        //Esvaziar caixa de texto
+        inputNomeDaPublicacaoReferenciada3.value = "";
     }
     else if(getOpcaoSelecionadaNoSegundoSelect() == 3){
         inputNomeDaPublicacaoReferenciada2.removeAttribute("disabled");
         inputNomeDaPublicacaoReferenciada3.removeAttribute("disabled");
     }
+
+    inputNomeDaPublicacaoReferenciada1.classList.remove("erro");
+    inputNomeDaPublicacaoReferenciada2.classList.remove("erro");
+    inputNomeDaPublicacaoReferenciada3.classList.remove("erro");
 })
 
+quartoBotaoAvancar.addEventListener("click", ()=>{
+    if(getOpcaoSelecionadaNoSegundoSelect() == 1){
+        //Título da publicação referenciada
+        if(inputNomeDaPublicacaoReferenciada1.value === ""){
+            window.alert("A publicação referenciada precisa ter um título!!!");
+            inputNomeDaPublicacaoReferenciada1.classList.add("erro");
+            event.preventDefault();
+            return;
+        }
+        else{ inputNomeDaPublicacaoReferenciada1.classList.remove("erro");}
 
+        if(!isNaN(inputNomeDaPublicacaoReferenciada1.value)){
+            window.alert("O título da publicação referenciada não pode ser um valor numérico!");
+            inputNomeDaPublicacaoReferenciada1.classList.add("erro");
+            event.preventDefault();
+            return;
+        }
+        else{ inputNomeDaPublicacaoReferenciada1.classList.remove("erro");}
+
+        if(inputNomeDaPublicacaoReferenciada1.value.length < 4){
+            window.alert("O título da publicação referenciada não pode ter um tamanho inferior à 4 caracteres!");
+            inputNomeDaPublicacaoReferenciada1.classList.add("erro");
+            event.preventDefault();
+            return;
+        }
+        else{ inputNomeDaPublicacaoReferenciada1.classList.remove("erro");}
+    }
+    else if(getOpcaoSelecionadaNoSegundoSelect() == 2){
+        //Título da 1ª publicação referenciada 
+        if(inputNomeDaPublicacaoReferenciada1.value === ""){
+            window.alert("A primeira publicação referenciada precisa ter um título!!!");
+            inputNomeDaPublicacaoReferenciada1.classList.add("erro");
+            event.preventDefault();
+            return;
+        }
+        else{ inputNomeDaPublicacaoReferenciada1.classList.remove("erro");}
+
+        if(!isNaN(inputNomeDaPublicacaoReferenciada1.value)){
+            window.alert("O título da primeira publicação referenciada não pode ser um valor numérico!");
+            inputNomeDaPublicacaoReferenciada1.classList.add("erro");
+            event.preventDefault();
+            return;
+        }
+        else{ inputNomeDaPublicacaoReferenciada1.classList.remove("erro");}
+
+        if(inputNomeDaPublicacaoReferenciada1.value.length < 4){
+            window.alert("O título da primeira publicação referenciada não pode ter um tamanho inferior à 4 caracteres!");
+            inputNomeDaPublicacaoReferenciada1.classList.add("erro");
+            event.preventDefault();
+            return;
+        }
+        else{ inputNomeDaPublicacaoReferenciada1.classList.remove("erro");}
+
+        //Título da 2ª publicação referenciada
+        if(inputNomeDaPublicacaoReferenciada2.value === ""){
+            window.alert("A segunda publicação referenciada precisa ter um título!!!");
+            inputNomeDaPublicacaoReferenciada2.classList.add("erro");
+            event.preventDefault();
+            return;
+        }
+        else{ inputNomeDaPublicacaoReferenciada2.classList.remove("erro");}
+
+        if(!isNaN(inputNomeDaPublicacaoReferenciada2.value)){
+            window.alert("O título da segunda publicação referenciada não pode ser um valor numérico!");
+            inputNomeDaPublicacaoReferenciada2.classList.add("erro");
+            event.preventDefault();
+            return;
+        }
+        else{ inputNomeDaPublicacaoReferenciada2.classList.remove("erro");}
+
+        if(inputNomeDaPublicacaoReferenciada2.value.length < 4){
+            window.alert("O título da segunda publicação referenciada não pode ter um tamanho inferior à 4 caracteres!");
+            inputNomeDaPublicacaoReferenciada2.classList.add("erro");
+            event.preventDefault();
+            return;
+        }
+        else{ inputNomeDaPublicacaoReferenciada2.classList.remove("erro");}
+    }
+    else if(getOpcaoSelecionadaNoSegundoSelect() == 3){
+        //Título da 1ª publicação referenciada 
+        if(inputNomeDaPublicacaoReferenciada1.value === ""){
+            window.alert("A primeira publicação referenciada precisa ter um título!!!");
+            inputNomeDaPublicacaoReferenciada1.classList.add("erro");
+            event.preventDefault();
+            return;
+        }
+        else{ inputNomeDaPublicacaoReferenciada1.classList.remove("erro");}
+
+        if(!isNaN(inputNomeDaPublicacaoReferenciada1.value)){
+            window.alert("O título da primeira publicação referenciada não pode ser um valor numérico!");
+            inputNomeDaPublicacaoReferenciada1.classList.add("erro");
+            event.preventDefault();
+            return;
+        }
+        else{ inputNomeDaPublicacaoReferenciada1.classList.remove("erro");}
+
+        if(inputNomeDaPublicacaoReferenciada1.value.length < 4){
+            window.alert("O título da primeira publicação referenciada não pode ter um tamanho inferior à 4 caracteres!");
+            inputNomeDaPublicacaoReferenciada1.classList.add("erro");
+            event.preventDefault();
+            return;
+        }
+        else{ inputNomeDaPublicacaoReferenciada1.classList.remove("erro");}
+
+        //Título da 2ª publicação referenciada
+        if(inputNomeDaPublicacaoReferenciada2.value === ""){
+            window.alert("A segunda publicação referenciada precisa ter um título!!!");
+            inputNomeDaPublicacaoReferenciada2.classList.add("erro");
+            event.preventDefault();
+            return;
+        }
+        else{ inputNomeDaPublicacaoReferenciada2.classList.remove("erro");}
+
+        if(!isNaN(inputNomeDaPublicacaoReferenciada2.value)){
+            window.alert("O título da segunda publicação referenciada não pode ser um valor numérico!");
+            inputNomeDaPublicacaoReferenciada2.classList.add("erro");
+            event.preventDefault();
+            return;
+        }
+        else{ inputNomeDaPublicacaoReferenciada2.classList.remove("erro");}
+
+        if(inputNomeDaPublicacaoReferenciada2.value.length < 4){
+            window.alert("O título da segunda publicação referenciada não pode ter um tamanho inferior à 4 caracteres!");
+            inputNomeDaPublicacaoReferenciada2.classList.add("erro");
+            event.preventDefault();
+            return;
+        }
+        else{ inputNomeDaPublicacaoReferenciada2.classList.remove("erro");}
+
+        //Título da 3ª publicação referenciada
+        if(inputNomeDaPublicacaoReferenciada3.value === ""){
+            window.alert("A segunda publicação referenciada precisa ter um título!!!");
+            inputNomeDaPublicacaoReferenciada3.classList.add("erro");
+            event.preventDefault();
+            return;
+        }
+        else{ inputNomeDaPublicacaoReferenciada3.classList.remove("erro");}
+
+        if(!isNaN(inputNomeDaPublicacaoReferenciada3.value)){
+            window.alert("O título da segunda publicação referenciada não pode ser um valor numérico!");
+            inputNomeDaPublicacaoReferenciada3.classList.add("erro");
+            event.preventDefault();
+            return;
+        }
+        else{ inputNomeDaPublicacaoReferenciada3.classList.remove("erro");}
+
+        if(inputNomeDaPublicacaoReferenciada3.value.length < 4){
+            window.alert("O título da segunda publicação referenciada não pode ter um tamanho inferior à 4 caracteres!");
+            inputNomeDaPublicacaoReferenciada3.classList.add("erro");
+            event.preventDefault();
+            return;
+        }
+        else{ inputNomeDaPublicacaoReferenciada3.classList.remove("erro");}
+    }
+})
