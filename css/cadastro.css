@@ -151,6 +151,55 @@ input::placeholder{
     cursor: pointer;
 }
 
+/* ----------------- Texto de validação ---------------*/
+
+.texto-de-aviso-1, .texto-de-aviso-2, .texto-de-aviso-3,
+.texto-de-aviso-4, .texto-de-aviso-5, .texto-de-aviso-6,
+.texto-de-aviso-7, .texto-de-aviso-8, .texto-de-aviso-9,
+.texto-de-aviso-10, .texto-de-aviso-11, .texto-de-aviso-12{
+    color: red;
+    position: absolute;
+    margin-top: 60px;
+    display: none;
+}
+
+.texto-de-aviso-2{
+    margin-top: 60px;
+    margin-left: 630px;
+}
+
+.texto-de-aviso-4{
+    margin-top: 60px;
+    margin-left: 630px;
+}
+
+.texto-de-aviso-5{
+    left: 150px;
+    top: 785px;
+}
+
+.texto-de-aviso-6{
+    margin-top: 60px;
+}
+
+.texto-de-aviso-7{
+    margin-top: 60px;
+    margin-left: 630px;
+}
+
+.texto-de-aviso-9{
+    margin-top: 60px;
+    margin-left: 630px;
+}
+
+.texto-de-aviso-11{
+    margin-top: 60px;
+    margin-left: 630px;
+}
+
+.erro{
+    border-color: #C21F30;
+}
 @media screen and (max-width:885px){
     /*Menu mobile*/
     .menu-mobile-section{
@@ -263,6 +312,49 @@ input::placeholder{
     .segunda-seccao-do-rodape{
         padding: 15px 0;
     }
+
+    /* ----------------- Texto de validação ---------------*/
+
+    .texto-de-aviso-1, .texto-de-aviso-2, .texto-de-aviso-3,
+    .texto-de-aviso-4, .texto-de-aviso-5, .texto-de-aviso-6,
+    .texto-de-aviso-7, .texto-de-aviso-8, .texto-de-aviso-9,
+    .texto-de-aviso-10, .texto-de-aviso-11, .texto-de-aviso-12{
+        margin-top: 55px;
+    }
+
+    .texto-de-aviso-2{
+        margin-top: 135px;
+        margin-left: 0px;
+    }
+
+    .texto-de-aviso-4{
+        margin-top: 135px;
+        margin-left: 0px;
+    }
+
+    .texto-de-aviso-5{
+        left: 120px;
+        margin-top: 150px;
+    }
+
+    .texto-de-aviso-7{
+        margin-top: 139px;
+        margin-left: 0px;
+    }
+
+    .texto-de-aviso-8{
+        margin-top: 52px;
+    }
+
+    .texto-de-aviso-9{
+        margin-top: 138px;
+        margin-left: 0px;
+    }
+
+    .texto-de-aviso-11{
+        margin-top: 138px;
+        margin-left: 0px;
+    }
 }
 
 @media screen and (max-width:430px){
@@ -345,5 +437,41 @@ input::placeholder{
         font-size: 1.3rem;
         margin-top: 5px;
         margin-bottom: 30px;
+    }
+
+    /* ----------------- Texto de validação ---------------*/
+
+    .texto-de-aviso-1, .texto-de-aviso-2, .texto-de-aviso-3,
+    .texto-de-aviso-4, .texto-de-aviso-5, .texto-de-aviso-6,
+    .texto-de-aviso-7, .texto-de-aviso-8, .texto-de-aviso-9,
+    .texto-de-aviso-10, .texto-de-aviso-11, .texto-de-aviso-12{
+        margin-top: 45px;
+        font-size: 16px;
+    }
+
+    .texto-de-aviso-2{
+        margin-top: 116px;
+    }
+
+    .texto-de-aviso-4{
+        margin-top: 116px;
+        margin-right: 100px;
+    }
+
+    .texto-de-aviso-5{
+        left: 43px;
+        margin-top: 74px;
+    }
+
+    .texto-de-aviso-7{
+        margin-top: 118px;
+    }
+
+    .texto-de-aviso-9{
+        margin-top: 118px;
+    }
+
+    .texto-de-aviso-11{
+        margin-top: 118px;
     }
 }

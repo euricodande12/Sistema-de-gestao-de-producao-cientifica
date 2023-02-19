@@ -91,41 +91,42 @@
                 <fieldset class="field-formulario-1">
                     <legend>Pesquisador</legend>
                     <div class="divisao-do-formulario-1"><!-- x --- Início da primeira divisão --- x -->
-                        <input type="text" class="input-nome-do-pesquisador" placeholder="Nome completo"><!-- x --- Input do nome completo --- x -->
-                        <input type="email" class="input-email-do-pesquisador" placeholder="E-mail"><!-- x --- Input do email --- x -->
+                        <input type="text" class="input-nome-do-pesquisador" placeholder="Nome completo" id="input-1" maxlength="60"><!-- x --- Input do nome completo --- x -->
+                        <span class="texto-de-aviso-1">Texto</span>
+                        <input type="email" class="input-email-do-pesquisador" placeholder="E-mail" id="input-2" maxlength="60"><!-- x --- Input do email --- x -->
+                        <span class="texto-de-aviso-2">Aviso</span>
                     </div><!-- x --- Fim da primeira divisão --- x -->
                     <div class="divisao-do-formulario-2"><!-- x --- Início da segunda divisão --- x -->
-                        <input type="password" class="input-senha-do-pesquisador" placeholder="Senha"><!-- x --- Input da senha --- x -->
-                        <input type="password" class="input-reintroduzir-senha-do-pesquisador" placeholder="Senha novamente"><!-- x --- Input da senha --- x -->
+                        <input type="password" class="input-senha-do-pesquisador" placeholder="Senha" id="input-3" minlength="8" maxlength="30"><!-- x --- Input da senha --- x -->
+                        <span class="texto-de-aviso-3">Texto</span>
+                        <input type="password" class="input-reintroduzir-senha-do-pesquisador" placeholder="Senha novamente" id="input-4" minlength="8" maxlength="30"><!-- x --- Input da senha --- x -->
+                        <span class="texto-de-aviso-4">Aviso</span>
                     </div><!-- x --- Fim da segunda divisão --- x -->
                     <div class="divisao-do-formulario-3"><!-- x --- Início da terceira divisão --- x -->
-                        <button class="botao-ver-senhas">Ver as senhas</button><!-- x --- Botão para ver as senhas --- x -->
+                        <button type="button" class="botao-ver-senhas" id="botao-ver-senhas-1">Ver as senhas</button><!-- x --- Botão para ver as senhas --- x -->
                     </div><!-- x --- Fim da terceira divisão --- x -->
                 </fieldset>
             </form>
             <!-- x ---------- Fim do primeiro formulário da segunda seção da parte principal do site ---------- x -->
   
-            <!-- x ----------PHP ---------- x -->
-            <?php
-            
-            
-            ?>
-            <!-- x ----------PHP ---------- x -->
            <!-- x ---------- Início do segundo formulário da segunda seção da parte principal do site ---------- x -->
            <form action="" class="formulario-de-dados-da-instituicao">
             <!-- x ---------- Início do parágrafo do primeiro artigo da segunda seção da parte principal do site ---------- x -->
             <fieldset class="field-formulario-2">
                 <legend>Instituição</legend>
                 <div class="divisao-do-formulario-4"><!-- x --- Início da primeira divisão --- x -->
-                    <input type="text" class="input-nome-da-instituicao" placeholder="Nome"><!-- x --- Input do nome da instituição --- x -->
+                    <input type="text" class="input-nome-da-instituicao" placeholder="Nome" id="input-5" maxlength="35"><!-- x --- Input do nome da instituição --- x -->
+                    <span class="texto-de-aviso-5">Texto</span>
                 </div><!-- x --- Fim da primeira divisão --- x -->
                 <div class="divisao-do-formulario-5"><!-- x --- Início da segunda divisão --- x -->
-                    <input type="text" class="input-senha-da-instituicao" placeholder="Sigla"><!-- x --- Input da senha --- x -->
-                    <input type="text" class="input-reintroduzir-senha-da-instituicao" placeholder="País"><!-- x --- Input da senha --- x -->
+                    <input type="text" class="input-senha-da-instituicao" placeholder="Sigla" id="input-6" maxlength="12"><!-- x --- Input da sigla da instituição --- x -->
+                    <span class="texto-de-aviso-6">Aviso</span>
+                    <input type="text" class="input-reintroduzir-senha-da-instituicao" placeholder="País" id="input-7" maxlength="20"><!-- x --- Input do país da instituição --- x -->
+                    <span class="texto-de-aviso-7">Texto</span>
                 </div><!-- x --- Fim da segunda divisão --- x -->
             </fieldset>
             <div class="centralizar-botao"><!-- x ---------- Início da div para centralizar o botão ---------- x -->
-                <button class="botao-do-cadastro">Cadastrar</button><!-- x --------- Botão de cadastro--------- x -->
+                <button class="botao-do-cadastro" onclick="ValidarCadastroDoPesquisador()">Cadastrar</button><!-- x --------- Botão de cadastro--------- x -->
             </div><!-- x ---------- Fim da div para centralizar o botão ---------- x -->
         </form>
         <!-- x ---------- Fim do segundo formulário da segunda seção da parte principal do site ---------- x -->
@@ -139,23 +140,28 @@
                 <fieldset class="field-formulario-3">
                     <legend>Administrador</legend>
                     <div class="divisao-do-formulario-6"><!-- x --- Início da primeira divisão --- x -->
-                        <input type="text" class="input-nome-do-administrador" placeholder="Nome completo"><!-- x --- Input do nome completo --- x -->
-                        <input type="email" class="input-email-do-administrador" placeholder="E-mail"><!-- x --- Input do email --- x -->
+                        <input type="text" class="input-nome-do-administrador" placeholder="Nome completo" id="input-8" maxlength="60"><!-- x --- Input do nome completo --- x -->
+                        <span class="texto-de-aviso-8">Aviso</span>
+                        <input type="email" class="input-email-do-administrador" placeholder="E-mail" id="input-9" maxlength="60"><!-- x --- Input do email --- x -->
+                        <span class="texto-de-aviso-9">Texto</span>
                     </div><!-- x --- Fim da primeira divisão --- x -->
                     <div class="divisao-do-formulario-7"><!-- x --- Início da segunda divisão --- x -->
-                        <input type="password" class="input-senha-do-administrador" placeholder="Senha"><!-- x --- Input da senha --- x -->
-                        <input type="password" class="input-reintroduzir-senha-do-administrador" placeholder="Senha novamente"><!-- x --- Input da senha --- x -->
+                        <input type="password" class="input-senha-do-administrador" placeholder="Senha" id="input-10" maxlength="30"><!-- x --- Input da senha --- x -->
+                        <span class="texto-de-aviso-10">Aviso</span>
+                        <input type="password" class="input-reintroduzir-senha-do-administrador" placeholder="Senha novamente" id="input-11" maxlength="30"><!-- x --- Input da senha --- x -->
+                        <span class="texto-de-aviso-11">Texto</span>
                     </div><!-- x --- Fim da segunda divisão --- x -->
                     <div class="divisao-do-formulario-8"><!-- x --- Início da segunda divisão --- x -->
-                        <input type="texto" class="input-codigo-aleatorio-do-administrador" placeholder="Código aleatório"><!-- x --- Input do código --- x -->
+                        <input type="texto" class="input-codigo-aleatorio-do-administrador" placeholder="Código aleatório" id="input-12" maxlength="4"><!-- x --- Input do código --- x -->
+                        <span class="texto-de-aviso-12">Aviso</span>
                         <button class="botao-enviar-codigo">Enviar código</button><!-- x --- button da enviar código --- x -->
                     </div><!-- x --- Fim da segunda divisão --- x -->
                     <div class="divisao-do-formulario-9"><!-- x --- Início da terceira divisão --- x -->
-                        <button class="botao-ver-senhas">Ver as senhas</button><!-- x --- Botão para ver as senhas --- x -->
+                        <button type="button" class="botao-ver-senhas" id="botao-ver-senhas-2">Ver as senhas</button><!-- x --- Botão para ver as senhas --- x -->
                     </div><!-- x --- Fim da terceira divisão --- x -->
                 </fieldset>
                 <div class="centralizar-botao"><!-- x ---------- Início da div para centralizar o botão ---------- x -->
-                    <button class="botao-do-cadastro">Cadastrar</button><!-- x --------- Botão de cadastro--------- x -->
+                    <button class="botao-do-cadastro" id="botao-do-cadastro-2" onclick="ValidarCadastroDoAdministrador()">Cadastrar</button><!-- x --------- Botão de cadastro--------- x -->
                 </div><!-- x ---------- Fim da div para centralizar o botão ---------- x -->
             </form>
             <!-- x ---------- Fim do primeiro formulário da terceira seção da parte principal do site ---------- x -->
@@ -182,5 +188,6 @@
     </footer>
     <!-- x ---------- Fim do rodapé do site ---------- x -->
     <script src="js/menu-mobile.js"></script>
+    <script src="js/cadastro.js"></script>
 </body>
 </html>
