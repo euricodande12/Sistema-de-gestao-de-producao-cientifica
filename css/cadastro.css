@@ -200,6 +200,7 @@ input::placeholder{
 .erro{
     border-color: #C21F30;
 }
+
 @media screen and (max-width:885px){
     /*Menu mobile*/
     .menu-mobile-section{

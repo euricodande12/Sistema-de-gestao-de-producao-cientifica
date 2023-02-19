@@ -92,10 +92,12 @@
                         <option value="Pesquisador">Pesquisador</option>
                         <option value="Administrador">Administrador</option>
                     </select>
-                    <input type="email" class="input-email" placeholder="E-mail"><!-- x --- Input do email --- x -->
-                    <input type="password" class="input-senha" placeholder="Senha"><!-- x --- Input da senha --- x -->
+                    <input type="email" class="input-email" placeholder="E-mail" id="input-1" maxlength="40"><!-- x --- Input do email --- x -->
+                    <span class="texto-de-aviso-1">Texto</span>
+                    <input type="password" class="input-senha" placeholder="Senha" id="input-2" maxlength="30"><!-- x --- Input da senha --- x -->
+                    <span class="texto-de-aviso-2">Aviso</span>
                     <div class="divisao-do-formulario"><!-- x --- Início da divisão --- x -->
-                        <button class="botao-senha">Ver as senhas</button><!-- x --- Botão para ver as senhas --- x -->
+                        <button type="button" class="botao-senha" id="botao-ver-a-senha">Ver a senha</button><!-- x --- Botão para ver as senhas --- x -->
                         <button class="botao-senha">Esqueceu a senha?</button><!-- x --- Botão para dizer que esqueceu a senha --- x -->
                     </div><!-- x --- Fim da divisão --- x -->
                     <button class="botao-do-cadastro" onclick="Entrar()">Entrar</button><!-- x --------- Botão de entrar--------- x -->
@@ -126,5 +128,6 @@
     <!-- x ---------- Fim do rodapé do site ---------- x -->
     <script src="js/menu-mobile.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>

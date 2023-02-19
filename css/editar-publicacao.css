@@ -149,6 +149,9 @@ textarea::placeholder{
     padding: 0 25%;
 }
 
+.erro{
+    border-color: #C21F30;
+}
 
 @media screen and (max-width:885px){
     body{

@@ -38,7 +38,7 @@
                 <!-- x ---------- Início do único formulário da segunda seção da parte principal do site ---------- x -->
                 <form class="formulario">
                     <input type="text" class="input-nome-do-pesquisador" placeholder="Nome do pesquisador" id="input-nome-do-pesquisador" name="input-nome-do-pesquisador" disabled><!-- x --- Input do email --- x -->
-                    <input type="text" class="input-titulo-da-publicacao" placeholder="Título da publicação" id="input-titulo-da-publicacao" name="input-titulo-da-publicacao" minlength="4"><!-- x --- Input do email --- x -->
+                    <input type="text" class="input-titulo-da-publicacao" placeholder="Título da publicação" id="input-titulo-da-publicacao" name="input-titulo-da-publicacao" minlength="4" maxlength="60"><!-- x --- Input do email --- x -->
                     <select class="select-tipo">
                         <option value="null">Selecione o tipo</option>
                         <option value="Artigo Periódico">Artigo Periódico</option>
@@ -84,16 +84,16 @@
             <section class="segunda-secao-da-parte-principal">
                 <!-- x ---------- Início do único formulário da segunda seção da parte principal do site ---------- x -->
                 <form action="" class="formulario">
-                    <input type="text" class="input-nome-do-congresso" placeholder="Nome do congresso" id="input-nome-do-congresso" name="input-nome-do-congresso"><!-- x --- Input do nome do congresso --- x -->
+                    <input type="text" class="input-nome-do-congresso" placeholder="Nome do congresso" id="input-nome-do-congresso" name="input-nome-do-congresso" maxlength="50"><!-- x --- Input do nome do congresso --- x -->
                     <div class="div-1">
-                        <input type="text" class="input-sigla" placeholder="Sigla do congresso" id="input-sigla-do-congresso" name="input-sigla-do-congresso"><!-- x --- Input da sigla do congresso --- x -->
+                        <input type="text" class="input-sigla" placeholder="Sigla do congresso" id="input-sigla-do-congresso" name="input-sigla-do-congresso" maxlength="12"><!-- x --- Input da sigla do congresso --- x -->
                         <input type="number" class="input-ano" placeholder="Ano em que ocorreu" min="1000" id="input-ano-do-congresso" name="input-ano-do-congresso"><!-- x --- Input do email --- x -->
                     </div>
 
                     <div class="div-2">
-                        <input type="text" class="input-bairro" placeholder="Bairro" id="input-bairro" name="input-bairro"><!-- x --- Input do bairro --- x -->
-                        <input type="text" class="input-rua" placeholder="Rua" id="input-rua" name="input-rua"><!-- x --- Input da rua --- x -->
-                        <input type="text" class="input-edificio" placeholder="Edifício" id="input-edificio" name="input-edificio"><!-- x --- Input do difício --- x -->
+                        <input type="text" class="input-bairro" placeholder="Bairro" id="input-bairro" name="input-bairro" maxlength="35"><!-- x --- Input do bairro --- x -->
+                        <input type="text" class="input-rua" placeholder="Rua" id="input-rua" name="input-rua" maxlength="30"><!-- x --- Input da rua --- x -->
+                        <input type="text" class="input-edificio" placeholder="Edifício" id="input-edificio" name="input-edificio" maxlength="20"><!-- x --- Input do difício --- x -->
                     </div>
                     <div class="div-3">
                         <input type="number" class="input-numero-inicial" placeholder="Número inicial de página" min="1" id="input-numero-inicial" name="input-numero-inicial"><!-- x --- Input do número inicial de página --- x -->
@@ -139,8 +139,8 @@
             <section class="segunda-secao-da-parte-principal">
                 <!-- x ---------- Início do único formulário da segunda seção da parte principal do site ---------- x -->
                 <form action="" class="formulario">
-                    <input type="text" class="input-periodico" placeholder="Nome do periódico" id="input-nome-do-periodico" name="input-nome-do-periodico"><!-- x --- Input do nome do periódico--- x -->
-                    <input type="text" class="input-editora" placeholder="Nome da editora" id="input-nome-da-editora" name="input-nome-da-editora"><!-- x --- Input do nome da editora --- x -->
+                    <input type="text" class="input-periodico" placeholder="Nome do periódico" id="input-nome-do-periodico" name="input-nome-do-periodico" maxlength="40"><!-- x --- Input do nome do periódico--- x -->
+                    <input type="text" class="input-editora" placeholder="Nome da editora" id="input-nome-da-editora" name="input-nome-da-editora" maxlength="30"><!-- x --- Input do nome da editora --- x -->
                     <div class="div-3">
                         <input type="number" class="input-pagina-inicial" placeholder="Número de página inicial" min="1" id="input-pagina-inicial" name="input-pagina-inicial"><!-- x --- Input do número inicial de página --- x -->
                         <input type="number" class="input-pagina-final" placeholder="Número de página final" min="1" id="input-pagina-final" name="input-pagina-final"><!-- x --- Input do número final de página --- x -->
@@ -238,9 +238,9 @@
                         <option value="2">2</option>
                         <option value="3">3</option>
                     </select>
-                    <input type="text" class="input-nome-da-publicacao publicacao-1" placeholder="Nome da publicação" id="input-nome-da-publicacao-1" name="input-nome-da-publicacao-1"><!-- x --- Input do nome da publicação --- x -->
-                    <input type="text" class="input-nome-da-publicacao publicacao-2" disabled placeholder="Nome da publicação" id="input-nome-da-publicacao-2" name="input-nome-da-publicacao-2"><!-- x --- Input do nome da publicação --- x -->
-                    <input type="text" class="input-nome-da-publicacao publicacao-3" disabled placeholder="Nome da publicação" id="input-nome-da-publicacao-3" name="input-nome-da-publicacao-3"><!-- x --- Input do nome da publicação --- x -->
+                    <input type="text" class="input-nome-da-publicacao publicacao-1" placeholder="Nome da publicação" id="input-nome-da-publicacao-1" name="input-nome-da-publicacao-1" maxlength="60"><!-- x --- Input do nome da publicação --- x -->
+                    <input type="text" class="input-nome-da-publicacao publicacao-2" disabled placeholder="Nome da publicação" id="input-nome-da-publicacao-2" name="input-nome-da-publicacao-2" maxlength="60"><!-- x --- Input do nome da publicação --- x -->
+                    <input type="text" class="input-nome-da-publicacao publicacao-3" disabled placeholder="Nome da publicação" id="input-nome-da-publicacao-3" name="input-nome-da-publicacao-3" maxlength="60"><!-- x --- Input do nome da publicação --- x -->
                     <div class="divisao-do-formulario"><!-- x --- Início da divisão --- x -->
                         <a href="#passo-3" class="botao-2 btn-mt botao-retroceder">Retroceder</a><!-- x --- Botão para ver as senhas --- x -->
                         <a href="#passo-5" class="botao-2 btn-mt botao-avancar quarto-botao-avancar">Avançar</a><!-- x --- Botão para dizer que esqueceu a senha --- x -->

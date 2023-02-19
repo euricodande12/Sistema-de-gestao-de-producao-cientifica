@@ -38,7 +38,7 @@
             <div class="div-do-formulario">
                 <form action="" class="formulario">
                     <div class="div-1">
-                        <input type="text" class="input-nome" placeholder="Nome do pesquisador"><!-- x --- Input nome do pesquisador --- x -->
+                        <input type="text" class="input-nome" placeholder="Nome do pesquisador" id="nome-do-pesquisador" maxlength="60"><!-- x --- Input nome do pesquisador --- x -->
                         <select class="select-tipo">
                             <option value="null">----------- Tipo de publicação -----------</option>
                             <option value="Artigo Periódico" selected>Artigo Periódico</option>
@@ -46,8 +46,8 @@
                         </select>
                     </div>
                 </form>
-                <input type="text" class="input-nome-da-publicacao" placeholder="Nome da publicação"><!-- x --- Input do nome do congresso --- x -->
-                <textarea name="texto-a-ser-publicado" cols="30" rows="7" draggable="false"  placeholder="Texto publicado..."></textarea><!-- x --- Textarea para o texto que será publicado--- x -->
+                <input type="text" class="input-nome-da-publicacao" placeholder="Nome da publicação" id="nome-da-publicacao" maxlength="60"><!-- x --- Input do nome do congresso --- x -->
+                <textarea name="texto-a-ser-publicado" cols="30" rows="7" draggable="false"  placeholder="Texto publicado..." id="texto-a-ser-alterado"></textarea><!-- x --- Textarea para o texto que será publicado--- x -->
             </div>
             <!-- x ---------- Início da segunda seção da parte principal do site ---------- x -->
             <section class="segunda-secao-da-parte-principal">
@@ -55,7 +55,7 @@
                 <form action="" class="formulario">
                     <div class="divisao-do-formulario"><!-- x --- Início da divisão --- x -->
                         <button class="botao-1 botao-retroceder" onclick="Retroceder()">Retroceder</button><!-- x --- Botão para ver as senhas --- x -->
-                        <button class="botao-2 botao-avancar" onclick="IrPara()">Concluir edição</button><!-- x --- Botão para dizer que esqueceu a senha --- x -->
+                        <button type="button" class="botao-2 botao-avancar" onclick="ConcluirEdicao()">Concluir edição</button><!-- x --- Botão para dizer que esqueceu a senha --- x -->
                     </div><!-- x --- Fim da divisão --- x -->
                 </form>
                 <!-- x ---------- Fim do único formulário da segunda seção da parte principal do site ---------- x -->
@@ -65,5 +65,6 @@
         </main>
         <!-- x ---------- Fim da parte principal do site ---------- x -->
         <script src="js/script.js"></script>
+        <script src="js/editar-publicacao.js"></script>
 </body>
 </html>

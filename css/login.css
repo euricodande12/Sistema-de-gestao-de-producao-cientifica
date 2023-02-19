@@ -109,6 +109,20 @@ input::placeholder{
 
 }
 
+/* ----------------- Texto de validação ---------------*/
+
+.texto-de-aviso-1, .texto-de-aviso-2{
+    position: relative;
+    top: -50px;
+    font-size: 16px;
+    color: #C21F30;
+    display: none;
+}
+
+.erro{
+    border-color: #C21F30;
+}
+
 @media screen and (max-width:885px){
 
     /*Menu mobile*/
@@ -242,6 +256,13 @@ input::placeholder{
     .segunda-seccao-do-rodape{
         padding: 15px 0;
     }
+
+    /* ----------------- Texto de validação ---------------*/
+
+    .texto-de-aviso-1, .texto-de-aviso-2{
+        top: -40px;
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width:430px){
@@ -295,5 +316,9 @@ input::placeholder{
 
     .formulario{
         margin-bottom: 42px;
+    }
+
+    .texto-de-aviso-1, .texto-de-aviso-2{
+        font-size: 14px;
     }
 }
