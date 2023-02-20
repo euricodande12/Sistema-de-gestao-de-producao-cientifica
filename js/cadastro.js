@@ -383,7 +383,7 @@ inputInstituicaoSigla.addEventListener('input', ()=>{
 
 //Pais
 inputInstituicaoPais.addEventListener('input', ()=>{
-    //Se o país não for preenchida
+    //Se o país não for preenchido
     if(inputInstituicaoPais.value === ""){
         inputInstituicaoPais.classList.add('erro');
         inputInstituicaoPais.focus();

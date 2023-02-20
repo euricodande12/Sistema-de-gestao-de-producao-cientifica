@@ -27,9 +27,8 @@
                     <!-- x ---------- Início do parágrafo do primeiro artigo da segunda seção da parte principal do site ---------- x -->
                     <fieldset class="field-formulario-1">
                         <legend>Administrador</legend>
-                            <input type="text" class="input-nome-do-administrador" placeholder="Nome completo"><!-- x --- Input do nome completo --- x -->
-                            <input type="email" class="input-email-do-administrador" placeholder="E-mail"><!-- x --- Input do email --- x -->
-
+                            <input type="text" class="input-nome-do-administrador" placeholder="Nome completo" id="nome-do-administrador"><!-- x --- Input do nome completo --- x -->
+                            <input type="email" class="input-email-do-administrador" placeholder="E-mail" id="email-do-administrador"><!-- x --- Input do email --- x -->
                     </fieldset>
                 </form>
                 <!-- x ---------- Fim do primeiro formulário da segunda seção da parte principal do site ---------- x -->
@@ -40,7 +39,7 @@
                 <form action="" class="formulario">
                     <div class="divisao-do-formulario"><!-- x --- Início da divisão --- x -->
                         <a class="botao-2 botao-retroceder" href="pagina-inicial-administrador.html">Retroceder</a><!-- x --- Botão para ver as senhas --- x -->
-                        <a href="pagina-inicial-administrador.html" class="botao-1 botao-avancar">Alterar dados</a><!-- x --- Botão para dizer que esqueceu a senha --- x -->
+                        <a href="pagina-inicial-administrador.html" class="botao-1 botao-avancar" onclick="AlterarDados()">Alterar dados</a><!-- x --- Botão para dizer que esqueceu a senha --- x -->
                     </div><!-- x --- Fim da divisão --- x -->
                 </form>
                 <!-- x ---------- Fim do único formulário da segunda seção da parte principal do site ---------- x -->
@@ -50,5 +49,6 @@
         </main>
         <!-- x ---------- Fim da parte principal do site ---------- x -->
     <script src="js/script.js"></script>
+    <script src="js/editar-dados-administrador.js"></script>
 </body>
 </html>

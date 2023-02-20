@@ -71,5 +71,5 @@ function ConcluirEdicao(){
     }
     else{ textoAserAlterado.classList.remove("erro"); }
 
-        window.open('./pagina-inicial-administrador.html', '_self');
+    window.history.back();
 }
